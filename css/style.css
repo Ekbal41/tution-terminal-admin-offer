@@ -1,0 +1,5 @@
+.profile-img {
+    position: relative;
+    border: 3px solid #89c33f;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
