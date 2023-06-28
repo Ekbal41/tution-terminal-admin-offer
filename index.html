@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/color_palets.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css" />
 
     <link
       rel="stylesheet"
@@ -18,7 +20,9 @@
     <link rel="stylesheet" href="/assets/style.css" />
     <title>Admin - Offer</title>
   </head>
-  <body style="background-color: #f5f6fa">
+  <body>
+    <!-- navbar starts here -->
+
     <nav
       class="navbar navbar-expand-lg bg-white shadow-lg fixed-top"
       data-bs-theme="dark"
@@ -37,7 +41,7 @@
           <i class="bi bi-caret-down-fill"></i>
         </button>
       </div>
-      <ul class="navbar-nav ml-auto d-none d-md-block">
+      <ul class="navbar-nav ml-auto d-none d-md-lg">
         <li class="nav-item">
           <a
             class="nav-link dropdown-toggle"
@@ -62,18 +66,20 @@
         </li>
       </ul>
     </nav>
+    <!-- navbar ends here -->
 
     <div class="container-fluid">
       <div class="row">
+        <!-- sidebar starts here -->
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse"
+          class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse sidebar-width"
           style="height: 100vh; margin-top: 60px; position: fixed"
         >
           <div
             class="d-flex justify-content-center align-items-center flex-column border-bottom mt-2 pb-3"
           >
-            <div className="mb-2 ">
+            <div class="mb-2">
               <img
                 src="/images/boy.jpg"
                 alt="image"
@@ -88,298 +94,694 @@
             </div>
             <h5 class="text-gray-800 mt-3">Super Admin</h5>
           </div>
-
-          <ul
-            class="list-unstyled px-3 mt-2"
-            style="overflow-y: auto; height: 65vh"
-          >
-            <li class="mb-3 d-flex align-items-center">
-              <i class="bi bi-speedometer me-3 fs-4" style="color: #898e99"></i>
-
-              <a
-                href="#"
-                class="text-decoration-none text-gray-800 align-items-center"
-                style="cursor: pointer"
-              >
-                Dashboard
-              </a>
-            </li>
-            <li class="mb-3">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-sliders fs-5 me-3" style="color: #898e99"></i>
-                <div class="d-flex w-100 justify-content-between">
-                  <a
-                    class="text-decoration-none text-gray-800 align-items-center collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#config-collapse"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    Config
-                  </a>
-                  <i class="bi bi-chevron-left arrow-icon"></i>
-                </div>
-              </div>
-
-              <div class="collapse" id="config-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li
-                    class="ms-4 px-3 py-1 mt-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >All Job Offers</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-3">
-              <div class="d-flex align-items-center">
+          <div style="overflow-y: auto; height: 65vh" class="scrollbar-none">
+            <ul class="list-unstyled px-3 mt-2">
+              <li class="mb-3 d-flex align-items-center">
                 <i
-                  class="bi bi-person-fill-lock fs-5 me-3"
+                  class="bi bi-speedometer me-3 fs-4"
                   style="color: #898e99"
                 ></i>
-                <div class="d-flex w-100 justify-content-between">
-                  <a
-                    class="text-decoration-none text-gray-800 align-items-center collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#admin-collapse"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    Admin User
-                  </a>
-                  <i class="bi bi-chevron-left arrow-icon"></i>
+
+                <a
+                  href="#"
+                  class="text-decoration-none text-gray-800 align-items-center"
+                  style="cursor: pointer"
+                >
+                  Dashboard
+                </a>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-sliders fs-5 me-3" style="color: #898e99"></i>
+                  <div class="d-flex w-100 justify-content-between">
+                    <a
+                      class="text-decoration-none text-gray-800 align-items-center collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#config-collapse"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                    >
+                      Config
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                  </div>
                 </div>
-              </div>
 
-              <div class="collapse" id="admin-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li
-                    class="ms-4 px-3 py-1 mt-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >All Job Offers</a
+                <div class="collapse" id="config-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li
+                      class="ms-4 px-3 py-1 mt-3"
+                      style="border-left: 3px solid #898e99"
                     >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-3">
-              <div class="d-flex align-items-center">
-                <i
-                  class="bi bi-clipboard-fill fs-5 me-3"
-                  style="color: #898e99"
-                ></i>
-                <div class="d-flex w-100 justify-content-between">
-                  <a
-                    class="text-decoration-none text-gray-800 align-items-center collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#offer-collapse"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    Job Offer
-                  </a>
-                  <i class="bi bi-chevron-left arrow-icon"></i>
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >All Job Offers</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-              </div>
-
-              <div class="collapse" id="offer-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li
-                    class="ms-4 px-3 py-1 my-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >All Job Offers</a
-                    >
-                  </li>
-                  <li
-                    class="ms-4 px-3 py-1 my-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >Available Offers</a
-                    >
-                  </li>
-                  <li
-                    class="ms-4 px-3 py-1 my-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >Applications</a
-                    >
-                  </li>
-                  <li
-                    class="ms-4 px-3 py-1 mt-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >Add Offers</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-3">
-              <div class="d-flex align-items-center">
-                <i
-                  class="bi bi-credit-card fs-5 me-3"
-                  style="color: #898e99"
-                ></i>
-                <div class="d-flex w-100 justify-content-between">
-                  <a
-                    class="text-decoration-none text-gray-800 align-items-center collapsed"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#payment-collapse"
-                    aria-expanded="false"
-                    style="cursor: pointer"
-                  >
-                    Payment
-                  </a>
-                  <i class="bi bi-chevron-left arrow-icon"></i>
-                </div>
-              </div>
-
-              <div class="collapse" id="payment-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li
-                    class="ms-4 px-3 py-1 mt-3"
-                    style="border-left: 3px solid #898e99"
-                  >
-                    <a href="#" class="text-gray-800 text-decoration-none"
-                      >All Job Offers</a
-                    >
-                  </li>
-                </ul>
-                <li class="mb-3">
-                  <div class="d-flex align-items-center">
-                    <i
-                      class="bi bi-person-fill fs-5 me-3"
-                      style="color: #898e99"
-                    ></i>
-                    <div class="d-flex w-100 justify-content-between">
-                      <a
-                        class="text-decoration-none text-gray-800 align-items-center collapsed"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#tutor-collapse"
-                        aria-expanded="false"
-                        style="cursor: pointer"
-                      >
-                        Tutor
-                      </a>
-                      <i class="bi bi-chevron-left arrow-icon"></i>
-                    </div>
-                  </div>
-
-                  <div class="collapse" id="tutor-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li
-                        class="ms-4 px-3 py-1 mt-3"
-                        style="border-left: 3px solid #898e99"
-                      >
-                        <a href="#" class="text-gray-800 text-decoration-none"
-                          >All Job Offers</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex align-items-center">
-                    <i
-                      class="bi bi-people-fill fs-5 me-3"
-                      style="color: #898e99"
-                    ></i>
-                    <div class="d-flex w-100 justify-content-between">
-                      <a
-                        class="text-decoration-none text-gray-800 align-items-center collapsed"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#parent-collapse"
-                        aria-expanded="false"
-                        style="cursor: pointer"
-                      >
-                        Parent
-                      </a>
-                      <i class="bi bi-chevron-left arrow-icon"></i>
-                    </div>
-                  </div>
-
-                  <div class="collapse" id="parent-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li
-                        class="ms-4 px-3 py-1 mt-3"
-                        style="border-left: 3px solid #898e99"
-                      >
-                        <a href="#" class="text-gray-800 text-decoration-none"
-                          >All Job Offers</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mb-3">
-                  <div class="d-flex align-items-center">
-                    <i
-                      class="bi bi-gear-fill fs-5 me-3"
-                      style="color: #898e99"
-                    ></i>
-                    <div class="d-flex w-100 justify-content-between">
-                      <a
-                        class="text-decoration-none text-gray-800 align-items-center collapsed"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#setting-collapse"
-                        aria-expanded="false"
-                        style="cursor: pointer"
-                      >
-                        Settings
-                      </a>
-                      <i class="bi bi-chevron-left arrow-icon"></i>
-                    </div>
-                  </div>
-
-                  <div class="collapse" id="setting-collapse">
-                    <ul
-                      class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
-                    >
-                      <li
-                        class="ms-4 px-3 py-1 mt-3"
-                        style="border-left: 3px solid #898e99"
-                      >
-                        <a href="#" class="text-gray-800 text-decoration-none"
-                          >All Job Offers</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="mb-3 d-flex align-items-center">
+              </li>
+              <li class="mb-3">
+                <div class="d-flex align-items-center">
                   <i
-                    class="bi bi-door-open-fill me-3 fs-4"
+                    class="bi bi-person-fill-lock fs-5 me-3"
                     style="color: #898e99"
                   ></i>
+                  <div class="d-flex w-100 justify-content-between">
+                    <a
+                      class="text-decoration-none text-gray-800 align-items-center collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#admin-collapse"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                    >
+                      Admin User
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                  </div>
+                </div>
 
-                  <a
-                    href="#"
-                    class="text-decoration-none text-gray-800 align-items-center"
-                    style="cursor: pointer"
-                  >
-                    Logout
-                  </a>
-                </li>
-              </div>
-            </li>
-          </ul>
+                <div class="collapse" id="admin-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li
+                      class="ms-4 px-3 py-1 mt-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >All Job Offers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex align-items-center">
+                  <i
+                    class="bi bi-clipboard-fill fs-5 me-3"
+                    style="color: #898e99"
+                  ></i>
+                  <div class="d-flex w-100 justify-content-between">
+                    <a
+                      class="text-decoration-none text-gray-800 align-items-center collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#offer-collapse"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                    >
+                      Job Offer
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                  </div>
+                </div>
+
+                <div class="collapse" id="offer-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li
+                      class="ms-4 px-3 py-1 my-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >All Job Offers</a
+                      >
+                    </li>
+                    <li
+                      class="ms-4 px-3 py-1 my-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >Available Offers</a
+                      >
+                    </li>
+                    <li
+                      class="ms-4 px-3 py-1 my-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >Applications</a
+                      >
+                    </li>
+                    <li
+                      class="ms-4 px-3 py-1 mt-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >Add Offers</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-3">
+                <div class="d-flex align-items-center">
+                  <i
+                    class="bi bi-credit-card fs-5 me-3"
+                    style="color: #898e99"
+                  ></i>
+                  <div class="d-flex w-100 justify-content-between">
+                    <a
+                      class="text-decoration-none text-gray-800 align-items-center collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#payment-collapse"
+                      aria-expanded="false"
+                      style="cursor: pointer"
+                    >
+                      Payment
+                    </a>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                  </div>
+                </div>
+
+                <div class="collapse" id="payment-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li
+                      class="ms-4 px-3 py-1 mt-3"
+                      style="border-left: 3px solid #898e99"
+                    >
+                      <a href="#" class="text-gray-800 text-decoration-none"
+                        >All Job Offers</a
+                      >
+                    </li>
+                  </ul>
+                  <li class="mb-3">
+                    <div class="d-flex align-items-center">
+                      <i
+                        class="bi bi-person-fill fs-5 me-3"
+                        style="color: #898e99"
+                      ></i>
+                      <div class="d-flex w-100 justify-content-between">
+                        <a
+                          class="text-decoration-none text-gray-800 align-items-center collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#tutor-collapse"
+                          aria-expanded="false"
+                          style="cursor: pointer"
+                        >
+                          Tutor
+                        </a>
+                        <i class="bi bi-chevron-left arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="tutor-collapse">
+                      <ul
+                        class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                      >
+                        <li
+                          class="ms-4 px-3 py-1 mt-3"
+                          style="border-left: 3px solid #898e99"
+                        >
+                          <a href="#" class="text-gray-800 text-decoration-none"
+                            >All Job Offers</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <div class="d-flex align-items-center">
+                      <i
+                        class="bi bi-people-fill fs-5 me-3"
+                        style="color: #898e99"
+                      ></i>
+                      <div class="d-flex w-100 justify-content-between">
+                        <a
+                          class="text-decoration-none text-gray-800 align-items-center collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#parent-collapse"
+                          aria-expanded="false"
+                          style="cursor: pointer"
+                        >
+                          Parent
+                        </a>
+                        <i class="bi bi-chevron-left arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="parent-collapse">
+                      <ul
+                        class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                      >
+                        <li
+                          class="ms-4 px-3 py-1 mt-3"
+                          style="border-left: 3px solid #898e99"
+                        >
+                          <a href="#" class="text-gray-800 text-decoration-none"
+                            >All Job Offers</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <div class="d-flex align-items-center">
+                      <i
+                        class="bi bi-gear-fill fs-5 me-3"
+                        style="color: #898e99"
+                      ></i>
+                      <div class="d-flex w-100 justify-content-between">
+                        <a
+                          class="text-decoration-none text-gray-800 align-items-center collapsed"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#setting-collapse"
+                          aria-expanded="false"
+                          style="cursor: pointer"
+                        >
+                          Settings
+                        </a>
+                        <i class="bi bi-chevron-left arrow-icon"></i>
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="setting-collapse">
+                      <ul
+                        class="btn-toggle-nav list-unstyled fw-normal pb-1 small"
+                      >
+                        <li
+                          class="ms-4 px-3 py-1 mt-3"
+                          style="border-left: 3px solid #898e99"
+                        >
+                          <a href="#" class="text-gray-800 text-decoration-none"
+                            >All Job Offers</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="mb-3 d-flex align-items-center">
+                    <i
+                      class="bi bi-door-open-fill me-3 fs-4"
+                      style="color: #898e99"
+                    ></i>
+
+                    <a
+                      href="#"
+                      class="text-decoration-none text-gray-800 align-items-center"
+                      style="cursor: pointer"
+                    >
+                      Logout
+                    </a>
+                  </li>
+                </div>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <!-- sidebar ends here -->
+        <main class="container-custom">
+          <div class="col-md-9 ms-sm-auto col-lg-10" style="margin-top: 60px">
+            <!-- mini nav starts here -->
+            <div class="d-flex gap-4 flex-column flex-md-row p-3 mb-2">
+              <a
+                class="text-decoration-none text-gray-800 active-border"
+                href="index.html"
+                >All offers</a
+              >
+              <a
+                class="text-decoration-none text-gray-800"
+                href="available.html"
+                >Available offers</a
+              >
+              <a class="text-decoration-none text-gray-800" href="index.html"
+                >Aplications</a
+              >
+              <a
+                class="text-decoration-none text-gray-800"
+                href="available.html"
+                >Add New offers</a
+              >
+            </div>
+            <!-- mini nav ends here -->
+            <!-- main content section starts here -->
+            <div class="px-3">
+              <div class="owl-carousel">
+                <div
+                  class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
+                >
+                  <p class="fw-bold fs-5 mb-1 mt-3">234567</p>
+                  <p class="">All offer</p>
+                </div>
+                <div
+                  class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
+                >
+                  <p class="fw-bold fs-5 mb-1 mt-3">23567</p>
+                  <p class="">Dhaka</p>
+                </div>
+                <div
+                  class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
+                >
+                  <p class="fw-bold fs-5 mb-1 mt-3">567</p>
+                  <p class="">Khulna</p>
+                </div>
+                <div
+                  class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
+                >
+                  <p class="fw-bold fs-5 mb-1 mt-3">30067</p>
+                  <p class="">Dinajpur</p>
+                </div>
+                <div
+                  class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
+                >
+                  <p class="fw-bold fs-5 mb-1 mt-3">100</p>
+                  <p class="">Pabna</p>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between flex-column flex-lg-row gap-2 gap-lg-0"
+              >
+                <div>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i class="bi bi-sliders2 me-1"></i>Filter
+                  </button>
+                  <button class="btn btn-outline-dark">Send Bulk SMS</button>
+                </div>
+                <div class="d-flex gap-2">
+                  <input
+                    type="text"
+                    class="form-control rounded"
+                    placeholder="Search"
+                  />
+                  <select class="form-select rounded" style="width: 100px">
+                    <option selected>50</option>
+                    <option value="1">100</option>
+                    <option value="2">200</option>
+                    <option value="3">300</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- main content section ends here -->
+          </div>
+          <!-- Filter model starts here -->
+          <div
+            class="modal fade font-pop"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered px-3"
+              style="max-width: 1100px"
+            >
+              <div class="modal-content px-4 pt-3 pb-4">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Filter
+                    <span class="text-muted fw-light" style="font-size: 12">
+                    </span>
+                  </h1>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"></main>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body py-0">
+                  <div class="row row-cols-2 row-cols-lg-4 pb-2">
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date from</label>
+                      <input
+                        type="date"
+                        class="form-control shadow rounded-2"
+                        id="date"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Country</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Bangladesh</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Category</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Bangla Medium</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Source</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Affiliate Marcketing</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date To</label>
+                      <input
+                        type="date"
+                        class="form-control shadow rounded-2"
+                        id="date"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">City</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Dhaka</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Course</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>HSC</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Source ID</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>23456</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Created By</label>
+                      <input
+                        type="text"
+                        class="form-control shadow rounded-2"
+                        id="name"
+                        placeholder="Yasin Ahammed"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Location</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Mirpur 1</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Subjects</label>
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Bangla</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label"
+                        >Tutoring Method</label
+                      >
+
+                      <select
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select Method</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="collapse" id="collapseExample">
+                    <div class="row row-cols-2 row-cols-lg-4 pt-2">
+                      <div class="mb-3">
+                        <label for="date" class="form-label">Salary</label>
+
+                        <input
+                          type="text"
+                          class="form-control shadow rounded-2"
+                          id="name"
+                          placeholder="5000"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">
+                          Gender Requirement
+                        </label>
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Male</option>
+                          <option value="1">Female</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label"
+                          >Student Gender</label
+                        >
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Male</option>
+                          <option value="1">Femake</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">
+                          Institute Name
+                        </label>
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>School And College</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">Channel</label>
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Website</option>
+                          <option value="1">Facebook</option>
+                          <option value="2">Twitter</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label"
+                          >Days and Week</label
+                        >
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>4 days</option>
+                          <option value="1">5 days</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">Religion</label>
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Islam</option>
+                          <option value="1">Hindu</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">Hide Offer</label>
+
+                        <select
+                          class="shadow rounded-2 form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Hide</option>
+                          <option value="1">Nothing</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="modal-footer d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      class="mb-0"
+                    >
+                      <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-danger py-1 me-2">
+                      Clear
+                    </button>
+                    <button type="button" class="btn btn-primary py-1">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Filter Model ends here -->
+        </main>
       </div>
     </div>
     <script
@@ -387,23 +789,42 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var collapseElements = document.querySelectorAll(".collapse");
-        var arrowIcons = document.querySelectorAll(".arrow-icon");
-
-        collapseElements.forEach(function (collapseElement, index) {
-          var arrowIcon = arrowIcons[index - 1];
-
-          collapseElement.addEventListener("show.bs.collapse", function () {
-            arrowIcon.classList.remove("bi-chevron-left");
-            arrowIcon.classList.add("bi-chevron-down");
-          });
-
-          collapseElement.addEventListener("hide.bs.collapse", function () {
-            arrowIcon.classList.remove("bi-chevron-down");
-            arrowIcon.classList.add("bi-chevron-left");
-          });
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          loop: true,
+          nav: true,
+          navText: [
+            "<i class='bi bi-chevron-left arrow-icon'></i>",
+            "<i class='bi bi-chevron-right arrow-icon'></i>",
+          ],
+          navClass: ["carousel-nav-btn-prev", "carousel-nav-btn-next"],
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 2,
+              nav: false,
+            },
+            1000: {
+              items: 4,
+              nav: true,
+              loop: false,
+            },
+          },
         });
       });
     </script>
