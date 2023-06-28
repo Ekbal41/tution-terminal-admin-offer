@@ -52,6 +52,7 @@ body {
 }
 .sidebar-width {
   max-width: 450px;
+
   background-color: antiquewhite;
   z-index: 100;
 }
