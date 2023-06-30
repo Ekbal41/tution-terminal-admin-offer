@@ -56,3 +56,10 @@ body {
   background-color: antiquewhite;
   z-index: 100;
 }
+
+.edited {
+  border: 2px solid #f26969 !important;
+  border-radius: 5px;
+  padding: 15px 20px 0px 20px;
+  color: #f26969 !important;
+}
