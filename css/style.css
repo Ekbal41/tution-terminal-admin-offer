@@ -63,3 +63,12 @@ body {
   padding: 15px 20px 0px 20px;
   color: #f26969 !important;
 }
+
+
+.green-border {
+  border: 2px solid #89c33f !important;
+  border-radius: 5px;
+  padding: 15px 20px 0px 20px;
+  color: #89c33f !important;
+  padding: 5px 5px 3px 5px;
+}

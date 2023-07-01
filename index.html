@@ -513,7 +513,10 @@
                             type="checkbox"
                             value=""
                             id="flexCheckDefault"
-                          />06-06-2023
+                          />
+                          <a type="button" class="text-decoration-none text-gray-700" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            06-06-2023
+                          </a>
                         </td>
                         <td class="text-info">246785</td>
                         <td class="text-info">
@@ -527,15 +530,18 @@
                         <td class="">Class-8</td>
                         <td class="text-wrap">Tolarbag, Mirpur</td>
                         <td>5000</td>
-                        <td class="text-info">EM</td>
+                        <td class="text-info"> <a type="button" class="text-decoration-none text-info" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                          EM
+                        </a></td>
                         <td class="text-nowrap">Khalid Rahman</td>
                         <td class="text-center">
-                          <span
-                            class="bg-primary text-white px-2 rounded-pill"
+                          <a
+                            class="bg-primary text-white px-2 rounded-pill text-decoration-none "
                             style="width: fit-content"
+                            href="aplicant-list.html"
                           >
                             4
-                          </span>
+                        </a>
                         </td>
                         <td>
                           <div class="form-check form-switch">
@@ -579,12 +585,13 @@
                         <td class="text-info">EM</td>
                         <td class="text-nowrap">Khalid Rahman</td>
                         <td class="text-center">
-                          <span
-                            class="bg-primary text-white px-2 rounded-pill"
+                          <a
+                            class="bg-primary text-white px-2 rounded-pill text-decoration-none "
                             style="width: fit-content"
+                            href="aplicant-list.html"
                           >
                             4
-                          </span>
+                        </a>
                         </td>
                         <td>
                           <div class="form-check form-switch">
@@ -713,7 +720,9 @@
                             id="flexCheckDefault"
                           />06-06-2023
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="text-info">246785
+                          
+                        </td>
                         <td class="text-info">
                            <a
                           href="job.html"
@@ -843,6 +852,7 @@
                   </button>
                 </div>
               </div>
+             
             </div>
             <!-- main content section ends here -->
           </div>
@@ -1153,6 +1163,55 @@
             </div>
           </div>
           <!-- Filter Model ends here -->
+         
+          <!--Date model starts here-->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="dateModalLabel" aria-hidden="true">
+            <div class="modal-dialog model-sm modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body pt-5 pb-4">
+                 <p class="text-center text-info fs-3">7 June 2023</p>
+                 <p class="text-center text-gray-700 border-top fs-1 pt-1">03:30 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Date model ends here-->
+          <!--ME model starts here-->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="emModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                
+                <div class="modal-body p-0">
+                  <div class="row row-cols-2 g-0">
+                    <div class="d-flex flex-column border-end">
+                      <div class="bg-info  text-white px-4 " style="border-radius: 8px 0 0 0; padding: 35px 0;">EM-1</div>
+                      <div class="px-4 pt-4 pb-3">
+                        <p class="mb-0 fw-semibold">Sagid SDY</p>
+                        <p style="font-size: 12px;">
+                          14-06-2023
+                        </p>
+                      </div>
+
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="bg-info  text-white px-4 " style="border-radius: 0 8px  0 0; padding: 35px 0;">EM-2</div>
+                      <div class="px-4 pt-4 pb-3">
+                        <p class="mb-0 fw-semibold">Shahriar Ripon</p>
+                        <p style="font-size: 12px;">
+                          14-06-2023
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!--ME model ends here-->
+
         </main>
       </div>
     </div>
