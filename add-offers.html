@@ -497,7 +497,7 @@
                           id="category"
                           style="padding: 14px 18px"
                         >
-                          <option selected>Class-8</option>
+                          <option selected>Class-10</option>
                           <option value="1">Class-9</option>
                         </select>
                       </div>
@@ -516,7 +516,7 @@
                       <div
                         class="d-flex justify-content-between align-items-center mt-4"
                       >
-                        <button class="btn btn-info">Add New</button>
+                        <a href="#infoonepone" class="btn btn-info">Add New</a>
                         <button class="btn btn-primary">Save</button>
                       </div>
                     </div>
@@ -614,10 +614,16 @@
                     </div>
                   </div>
                 </div>
-                <div>
+                <div class="" id="infoonepone">
                   <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
-                    <p class="mb-4 fw-semibold">Student Information-1.1</p>
-
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <p class="mb-4 fw-semibold">Student Information-1.1</p>
+                      <button class="btn-ghost">
+                        <i class="bi bi-x-circle fs-5"></i>
+                      </button>
+                    </div>
                     <div class="">
                       <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -637,8 +643,8 @@
                           id="gender"
                           style="padding: 14px 18px"
                         >
-                          <option selected>Male</option>
-                          <option value="1">Fmale</option>
+                          <option>Male</option>
+                          <option selected value="1">Fmale</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
@@ -705,53 +711,54 @@
                 </div>
                 <div>
                   <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
-                    <p class="mb-4 fw-semibold">Student Information-1.2</p>
-
+                    <div
+                      class="d-flex justify-content-between align-items-start"
+                    >
+                      <p class="mb-4 fw-semibold">Student Information-1.2</p>
+                      <button class="btn-ghost">
+                        <i class="bi bi-x-circle fs-5"></i>
+                      </button>
+                    </div>
                     <div class="">
                       <div class="mb-3">
-                        <label for="day" class="form-label required"
-                          >Days In Week</label
-                        >
+                        <label for="name" class="form-label">Name</label>
+                        <input
+                          type="text"
+                          class="form-control rounded-3 shadow-none"
+                          id="name"
+                          placeholder="Mehidi Hasan"
+                          style="padding: 14px 18px"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
                         <select
                           class="form-select rounded-3 shadow-none"
                           aria-label="Default select "
                           id="gender"
                           style="padding: 14px 18px"
-                          form="day"
                         >
-                          <option selected>4 Days</option>
-                          <option value="1">5 Days</option>
+                          <option>Male</option>
+                          <option selected value="1">Fmale</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
                         </select>
                       </div>
                       <div class="mb-3">
-                        <label for="date" class="form-label required"
-                          >Tutoring Time</label
+                        <label for="institute" class="form-label"
+                          >Name of Institute</label
                         >
                         <input
-                          type="date"
+                          type="text"
                           class="form-control rounded-3 shadow-none"
-                          id="date"
-                          placeholder="Bangla"
+                          id="institute"
+                          placeholder="Institute Name"
                           style="padding: 14px 18px"
                         />
                       </div>
                       <div class="mb-3">
-                        <label for="due" class="form-label required"
-                          >Tutoring Duration</label
-                        >
-                        <select
-                          class="form-select rounded-3 shadow-none"
-                          aria-label="Default select "
-                          id="due"
-                          style="padding: 14px 18px"
-                        >
-                          <option selected>2 Hour</option>
-                          <option value="1">3 Hour</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
                         <label for="category" class="form-label required"
-                          >Teaching Method</label
+                          >Category</label
                         >
                         <select
                           class="form-select rounded-3 shadow-none"
@@ -759,33 +766,169 @@
                           id="category"
                           style="padding: 14px 18px"
                         >
-                          <option selected>Student's Home</option>
-                          <option value="1">Other</option>
+                          <option selected>Bangla Medium</option>
+                          <option value="1">English Medium</option>
                         </select>
                       </div>
                       <div class="mb-3">
-                        <label for="salary" class="form-label required"
-                          >Maximum Salary</label
+                        <label for="category" class="form-label required"
+                          >Course</label
                         >
-                        <input
-                          type="number"
-                          class="form-control rounded-3 shadow-none"
-                          id="salary"
-                          placeholder="12000"
+                        <select
+                          class="form-select rounded-3 shadow-none"
+                          aria-label="Default select "
+                          id="category"
                           style="padding: 14px 18px"
-                        />
+                        >
+                          <option selected>Class-8</option>
+                          <option value="1">Class-9</option>
+                        </select>
                       </div>
                       <div class="mb-3">
-                        <label for="snum" class="form-label required"
-                          >Number Of Students</label
+                        <label for="name" class="form-label required"
+                          >Subjects</label
                         >
                         <input
                           type="text"
                           class="form-control rounded-3 shadow-none"
-                          id="snum"
-                          placeholder="2"
+                          id="name"
+                          placeholder="Bangla"
                           style="padding: 14px 18px"
                         />
+                      </div>
+                      <div
+                        class="d-flex justify-content-end align-items-center mt-4"
+                      >
+                        <button class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
+                    <p class="mb-4 fw-semibold">Location</p>
+
+                    <div class="">
+                      <div class="mb-3">
+                        <label for="cun" class="form-label required"
+                          >Country</label
+                        >
+                        <select
+                          class="form-select rounded-3 shadow-none"
+                          aria-label="Default select "
+                          id="cun"
+                          style="padding: 14px 18px"
+                        >
+                          <option selected>Bangladesh</option>
+                          <option value="1">India</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="city" class="form-label required"
+                          >City</label
+                        >
+                        <select
+                          class="form-select rounded-3 shadow-none"
+                          aria-label="Default select "
+                          id="city"
+                          style="padding: 14px 18px"
+                        >
+                          <option selected>Dhaka</option>
+                          <option value="1">Pabna</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="loc" class="form-label required"
+                          >Location</label
+                        >
+                        <select
+                          class="form-select rounded-3 shadow-none"
+                          aria-label="Default select "
+                          id="loc"
+                          style="padding: 14px 18px"
+                        >
+                          <option selected>Tolarbarg</option>
+                          <option value="1">Mirpur</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="add" class="form-label required"
+                          >Details Address</label
+                        >
+                        <div
+                          class="d-flex justify-content-center align-items-center px-2 rounded-3"
+                          style="border: 1px solid #1890ff"
+                        >
+                          <i class="bi bi-geo-alt-fill text-info ms-1"></i>
+                          <input
+                            type="text"
+                            class="form-control shadow-none rounded-3 border-0"
+                            placeholder="10/5, Tolarbag, Mirpur-1"
+                            style="padding: 12px 18px"
+                            id="add"
+                          />
+                        </div>
+                      </div>
+                      <!-- Map placeholder -->
+                      <div>
+                        <!-- place holder image for map -->
+                        <img
+                          src="https://via.placeholder.com/600x252/87CEFA/000000"
+                          alt="map"
+                          class="img-fluid rounded-3"
+                        />
+                      </div>
+                      <div
+                        class="d-flex justify-content-end align-items-center mt-4"
+                      >
+                        <button class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
+                    <p class="mb-4 fw-semibold">Title Note</p>
+
+                    <div class="">
+                      <div class="mb-3">
+                        <label for="requ" class="form-label required"
+                          >Tutor Requirement</label
+                        >
+                        <textarea
+                          class="form-control rounded-3 shadow-none"
+                          id="requ"
+                          rows="7"
+                        >
+                        Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your 
+                      </textarea
+                        >
+                      </div>
+                      <div class="mb-3">
+                        <label for="spn" class="form-label required"
+                          >Special Note</label
+                        >
+                        <textarea
+                          class="form-control rounded-3 shadow-none"
+                          id="spn"
+                          rows="7"
+                        >
+                        Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your 
+                      </textarea
+                        >
+                      </div>
+                      <div class="mb-3">
+                        <label for="staff" class="form-label required"
+                          >Staff Note</label
+                        >
+                        <textarea
+                          class="form-control rounded-3 shadow-none"
+                          id="staff"
+                          rows="7"
+                        >
+                        Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your 
+                      </textarea
+                        >
                       </div>
                       <div
                         class="d-flex justify-content-end align-items-center mt-4"
@@ -1064,6 +1207,38 @@
                       >
                         <button class="btn btn-primary">Save</button>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
+                    <p class="mb-4 fw-semibold">Parent Note</p>
+
+                    <div class="">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Expedita molestias rem assumenda ratione mollitia? Quidem
+                      nam temporibus sit corrupti provident iusto, dignissimos
+                      neque magnam cupiditate, omnis odit laboriosam impedit
+                      perspiciatis repellat doloribus perferendis et. Amet
+                      explicabo soluta ducimus fugit autem? Hic aspernatur
+                      suscipit ducimus officiis numquam ipsum ad provident
+                      quasi!
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="bg-white rounded-3 shadow-lg p-4 mb-4">
+                    <p class="mb-4 fw-semibold">Xxx</p>
+
+                    <div class="">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Expedita molestias rem assumenda ratione mollitia? Quidem
+                      nam temporibus sit corrupti provident iusto, dignissimos
+                      neque magnam cupiditate, omnis odit laboriosam impedit
+                      perspiciatis repellat doloribus perferendis et. Amet
+                      explicabo soluta ducimus fugit autem? Hic aspernatur
+                      suscipit ducimus officiis numquam ipsum ad provident
+                      quasi!
                     </div>
                   </div>
                 </div>

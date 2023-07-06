@@ -76,3 +76,10 @@ body {
   content: "*";
   color: red;
 }
+.btn-ghost {
+  background-color: white;
+  padding: -1px 5px;
+  border-radius: 50%;
+  margin-top: -3px;
+  border: none;
+}
