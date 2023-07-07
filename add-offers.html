@@ -406,7 +406,27 @@
                           class="form-control shadow-none rounded-3 border-0"
                           placeholder="Search"
                           style="padding: 12px 18px"
+                          value="Yousuf"
                         />
+                      </div>
+                      <div class="p-4">
+                        <div
+                          class="d-flex justify-content-start align-items-center gap-3"
+                        >
+                          <img
+                            src="https://th.bing.com/th/id/OIP.VqzttYBT7iSOHw-XV5k5_QHaHx?pid=ImgDet&rs=1"
+                            alt="map"
+                            class="img-fluid rounded-circle mb-3 shadow-lg"
+                            style="width: 40px; height: 40px"
+                          />
+                          <div>
+                            <p class="fw-semibold mb-0">Yousuf Ali</p>
+                            <p class="text-muted" style="font-size: 12px">
+                              Class-10, Mirpur-1,dhaka
+                            </p>
+                          </div>
+                        </div>
+                        <button class="btn shadow-none text-info"><i class="bi bi-plus-lg fw-bold me-3"></i>Add New Parent</button>
                       </div>
                     </div>
                   </div>
@@ -1325,7 +1345,11 @@
                         <a class="text-decoration-none text-gray-800" href="#"
                           >Closed (2)</a
                         >
-                        <a class="text-decoration-none text-gray-800" href="#"
+                        <a
+                          class="text-decoration-none text-gray-800"
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
                           >Status</a
                         >
                       </div>
@@ -1354,7 +1378,7 @@
                           >
                             <div
                               class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
-                              style="height: 30px; width: 30px"
+                              style="height: 30px; min-width: 30px"
                             >
                               <i class="bi bi-geo-alt-fill"></i>
                             </div>
@@ -1368,7 +1392,7 @@
                           >
                             <div
                               class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
-                              style="height: 30px; width: 30px"
+                              style="height: 30px; min-width: 30px"
                             >
                               <i class="bi bi-file-text-fill"></i>
                             </div>
@@ -1390,7 +1414,7 @@
                           >
                             <div
                               class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
-                              style="height: 30px; width: 30px"
+                              style="height: 30px; min-width: 30px"
                             >
                               <i class="bi bi-calendar-week-fill"></i>
                             </div>
@@ -1411,7 +1435,7 @@
                           >
                             <div
                               class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
-                              style="height: 30px; width: 30px"
+                              style="height: 30px; min-width: 30px"
                             >
                               <i class="bi bi-gender-ambiguous"></i>
                             </div>
@@ -1432,7 +1456,7 @@
                           >
                             <div
                               class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
-                              style="height: 30px; width: 30px"
+                              style="height: 30px; min-width: 30px"
                             >
                               <i class="bi bi-wallet-fill"></i>
                             </div>
@@ -1452,7 +1476,11 @@
                         <div
                           class="d-flex justify-content-end align-items-center"
                         >
-                          <button class="btn btn-dark me-2 px-2 py-1">
+                          <button
+                            class="btn btn-dark me-2 px-2 py-1"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1"
+                          >
                             View
                           </button>
                           <button class="btn btn-primary px-2 py-1">
@@ -1467,6 +1495,457 @@
             </div>
 
             <!-- main content section ends here -->
+            <!-- Modal for status-->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered mx-4 mx-lg-auto"
+                style="max-width: 870px"
+              >
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="rounded-3 shadow-lg mb-3">
+                      <div class="bg-primary text-white rounded-top px-4 py-4">
+                        Profile Status
+                      </div>
+                      <div class="p-4">
+                        <p class="mb-2 text-primary">
+                          Your profile has no issues
+                        </p>
+                        <p class="border-top border-2 pt-2 mb-0">
+                          Your profile is now unlocked, you can update it
+                          whenever you want.
+                        </p>
+                        <div
+                          class="d-flex justify-content-end align-items-center"
+                        >
+                          <button class="btn btn-primary px-4">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rounded-3 shadow-lg mb-3">
+                      <div class="bg-warning text-white rounded-top px-4 py-4">
+                        Profile Status
+                      </div>
+                      <div class="p-4">
+                        <p class="mb-2 text-warning">
+                          Your profile has some issues
+                        </p>
+                        <p class="border-top border-2 pt-2 mb-0">
+                          Your profile has been violating our terms & policies,
+                          so be aware of using it features.
+                        </p>
+                        <div
+                          class="d-flex justify-content-end align-items-center"
+                        >
+                          <button class="btn btn-warning px-4">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rounded-3 shadow-lg">
+                      <div class="bg-danger text-white rounded-top px-4 py-4">
+                        Profile Status
+                      </div>
+                      <div class="p-4">
+                        <p class="mb-2 text-danger">Your profile is locked</p>
+                        <p class="border-top border-2 pt-2 mb-0">
+                          To unlock your profile, please contact with the
+                          administrator 09678 444477.
+                        </p>
+                        <div
+                          class="d-flex justify-content-end align-items-center"
+                        >
+                          <button class="btn btn-danger px-4">Update</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for job details-->
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel1"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered mx-4 mx-lg-auto"
+                style="max-width: 1100px"
+              >
+                <div class="modal-content">
+                  <div class="modal-body p-lg-5">
+                    <div class="row">
+                      <div class="col-12 col-lg-8">
+                        <div class="p-4 rounded-3 shadow-lg mb-4">
+                          <p class="text-primary fs-5">Student Information</p>
+
+                          <div class="row row-cols-lg-3 row-cols-2 mt-5">
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-tags-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Category
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Bangla Medium
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-file-text-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Course
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  HSC first year
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-file-text-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Subjects
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  All
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-calendar-week-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Days and week
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  4 Days
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-clock-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Tutoring Time
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  1.30 pm
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-hourglass-top"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Tutoring Duration
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  1.50 Hour
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-back"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Tutor Method
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Online
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-wallet-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Maximum Salary
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  BDT 3000 Tk
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-gender-ambiguous"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Student Gender
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Male
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 rounded-3 shadow-lg mb-4">
+                          <p class="text-primary fs-5">Tutor Requirements</p>
+
+                          <div class="row mt-5">
+                            <div
+                              class="d-flex align-items-center mb-5 gap-3 col-6 col-lg-4"
+                            >
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-gender-ambiguous"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Tutor Gender
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  ANy
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center mb-5 gap-3 col-6 col-lg-4"
+                            >
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-calendar-date-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Hiring From
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  2023-04-01
+                                </span>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex align-items-center mb-5 gap-3 col-12"
+                            >
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-palette2"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Other Requirement
+                                </span>
+                                <br />
+                                <span class="text-gray-600 fs-mobile-7">
+                                  Tutor must be experienced at teaching english
+                                  version student
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="p-4 rounded-3 shadow-lg mb-4">
+                          <p class="text-primary fs-5">Contact Information</p>
+
+                          <div class="row row-cols-lg-3 row-cols-2 mt-5">
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-globe"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Country
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Bangladesh
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-buildings-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  City
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Dhaka
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-geo-alt-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Location
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Mirpur 1
+                                </span>
+                              </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5 gap-3">
+                              <div
+                                class="text-white bg-primary rounded shadow-lg d-flex justify-content-center align-items-center"
+                                style="height: 30px; min-width: 30px"
+                              >
+                                <i class="bi bi-person-vcard-fill"></i>
+                              </div>
+                              <div>
+                                <span class="fw-600 text-nowrap fs-mobile-7">
+                                  Full Address
+                                </span>
+                                <br />
+                                <span
+                                  class="text-gray-600 text-nowrap fs-mobile-7"
+                                >
+                                  Mirpur, Tolarbarg
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="p-4 rounded-3 flex-column flex-lg-row shadow-lg d-flex justify-content-between align-items-center"
+                        >
+                          <p class="text-uppercase m-0">job id</p>
+                          <p class="text-uppercase m-0">Total Views-1</p>
+
+                          <p class="text-uppercase m-0">total aplications-23</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+                        <div
+                          class="rounded-3 shadow-lg"
+                          style="padding: 30px 70px"
+                        >
+                          <div
+                            class="d-flex flex-column justify-content-center gap-3"
+                          >
+                            <button class="btn btn-dark">Get Direction</button>
+                            <button class="btn btn-secondary shadow-lg">
+                              Location
+                            </button>
+
+                            <button class="btn btn-secondary shadow-lg">
+                              Copy Link
+                            </button>
+
+                            <button class="btn btn-primary">Apply Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
