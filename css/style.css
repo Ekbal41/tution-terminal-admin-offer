@@ -60,8 +60,16 @@ body {
 .edited {
   border: 2px solid #f26969 !important;
   border-radius: 5px;
-  padding: 15px 20px 0px 20px;
+  /* padding: 15px 20px 0px 20px; */
+  padding: 7px  10px;
+  display: flex;
+  justify-content: space-evenly;
+
   color: #f26969 !important;
+}
+.edited p {
+  margin: 0;
+  padding: 0;
 }
 
 .green-border {

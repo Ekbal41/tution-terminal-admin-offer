@@ -26,7 +26,7 @@
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <img src="/images/logo.svg" alt="logo" />
+        <a href="index.html"><img src="/images/logo.svg" alt="logo" /></a>
         <button
           class="navbar-toggler d-md-none collapsed"
           type="button"
@@ -71,7 +71,7 @@
         <!-- sidebar starts here -->
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse sidebar-width"
+          class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse sidebar-width shadow-lg"
           style="height: 100vh; margin-top: 60px; position: fixed"
         >
           <div
@@ -386,7 +386,7 @@
         <main class="container-custom">
           <div class="col-md-9 ms-sm-auto col-lg-10" style="margin-top: 60px">
             <!-- main content section starts here -->
-            <div class="ps-3  py-4" style="padding-right: 13px">
+            <div class="ps-3 py-4" style="padding-right: 13px">
               <div class="pt-2 shadow-lg rounded-3 bg-white">
                 <div class="table-responsive">
                   <table
@@ -436,7 +436,58 @@
                           <p class="mb-0 text-muted">47: 15: 12 PM</p>
                         </td>
 
-                        <td class="d-flex p-4 gap-1">
+                        <td class="d-flex gap-1" style="padding: 30px 0px">
+                          <button
+                            class="btn btn-primary py-1 px-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1"
+                          >
+                            Note
+                          </button>
+                          <button
+                            class="btn btn-info py-1 px-2 text-nowrap"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2"
+                          >
+                            Create Note
+                          </button>
+                          <button
+                            class="btn btn-warning py-1 px-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3"
+                          >
+                            Log
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="" style="vertical-align: middle">
+                        <td
+                          scope="row "
+                          class="text-center text-nowrap"
+                          style="padding: 30px 18px"
+                        >
+                          01
+                        </td>
+                        <td class="text-info">246785</td>
+                        <td class="text-nowrap">Abdur Rahman</td>
+
+                        <td class="text-info">
+                          <a
+                            class="p-1 rounded text-info text-decoration-none"
+                            style="background-color: #e6eef7"
+                            >23457</a
+                          >
+                        </td>
+                        <td class="text-nowrap">Dhaka University</td>
+                        <td class="text-wrap">Dashboard</td>
+                        <td class="text-nowrap">Fahmida Roy</td>
+                        <td class="text-info">403</td>
+                        <td class="text-nowrap">
+                          <p class="mb-0">14-06-2023</p>
+                          <p class="mb-0 text-muted">47: 15: 12 PM</p>
+                        </td>
+
+                        <td class="d-flex gap-1" style="padding: 30px 0px">
                           <button
                             class="btn btn-primary py-1 px-2"
                             data-bs-toggle="modal"
@@ -484,7 +535,7 @@
                     Note Details
                   </h5>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body pe-0 ps-3">
                   <div>
                     <div
                       class="p-3 bg-light rounded-3 border border-1 border-dark mb-3"
@@ -656,16 +707,22 @@
             >
               <div class="modal-content mx-4">
                 <div class="modal-body p-0">
-                  <table class="table shadow-none mt-4">
+                  <table class="table shadow-none">
                     <thead
                       class=""
                       style="background-color: #3378c2; color: white"
                     >
                       <tr class="">
-                        <th scope="col">Name</th>
+                        <th scope="col" style="border-top-left-radius: 8px">
+                          Name
+                        </th>
                         <th scope="col" class="text-nowrap">Em ID</th>
                         <th scope="col">Date</th>
-                        <th scope="col" class="text-nowrap">
+                        <th
+                          scope="col"
+                          class="text-nowrap"
+                          style="border-top-right-radius: 8px"
+                        >
                           Note Before Edit
                         </th>
                       </tr>
