@@ -394,13 +394,16 @@
           <div class="col-md-9 ms-sm-auto col-lg-10" style="margin-top: 60px">
             <!-- main content section starts here -->
             <div class="py-4 ps-3 pe-2">
-              <div class="row row-cols-1 row-cols-lg-2">
+              <div class="row row-cols-1 row-cols-lg-2 ">
                 <div class="mb-4">
-                  <div class="bg-white py-4 shadow-lg rounded-3">
+                  <div
+                    class="bg-white py-4 shadow-lg rounded-3"
+                    style="height: 400px"
+                  >
                     <h5 class="mb-5 ms-4">Parents Information</h5>
                     <div class="">
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                       >
                         <p class="fw-semibold">Name</p>
                         <p class="">Abdur Rahman</p>
@@ -412,28 +415,33 @@
                         <p class="">2345</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Job ID</p>
                         <p class="">2345</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited" 
                       >
                         <p class="fw-semibold">Number</p>
                         <p class="">01685696300</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
-                        <p class="fw-semibold">When are you looking to hire?</p>
+                        <p class="fw-semibold">
+                          When are you looking to hire?
+                        </p>
                         <p class="">03/06/2023</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="mb-4">
-                  <div class="bg-white py-4 shadow-lg rounded-3">
+                  <div
+                    class="bg-white py-4 shadow-lg rounded-3"
+                    style="height: 400px"
+                  >
                     <h5 class="mb-5 ms-4">Reference Information</h5>
                     <div class="">
                       <div
@@ -443,7 +451,7 @@
                         <p class="">Abdur Rahman</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Reference ID</p>
                         <p class="">2345</p>
@@ -451,13 +459,15 @@
                       <div
                         class="m-4 p-4 rounded-3 d-flex justify-content-between align-items-center flex-column"
                         style="
-                          box-shadow: 0px 4px 30px 0px rgba(59, 60, 61, 0.15);
+                          box-shadow: 0px 4px 30px 0px
+                            rgba(59, 60, 61, 0.15);
+                          height: 135px;
                         "
                       >
                         <p class="">
                           Sms Send (Are you sure to send sms to this offer)
                         </p>
-                        <div class="mt-3 bg-info text-white rounded px-2">
+                        <div class="bg-info text-white rounded px-2">
                           <i class="bi bi-check-lg fs-5"></i>
                         </div>
                       </div>
@@ -555,13 +565,13 @@
                     <h5 class="mb-5 ms-4">Location</h5>
                     <div class="">
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Country</p>
                         <p class="">Bangladesh</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">City</p>
                         <p class="">Dhaka</p>
@@ -573,16 +583,30 @@
                         <p class="">Tolarbarg</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                       >
                         <p class="fw-semibold">Details Address</p>
-                        <p class="">10/5, Tolarbagh, Mirpur-1</p>
+                        <p class="">10/5, Tolarbagh<button
+                          tabindex="0"
+                          style="border: none"
+                          class="badge rounded-pill  text-gray-700 ms-1"
+                          role="button"
+                          data-bs-toggle="popover"
+                          data-bs-trigger="focus"
+                          title="Details Address"
+                          data-bs-content="10/5, Tolarbagh, Mirpur-1, Dhaka , Bangladesh."
+                        >
+                          •••
+                        </button></p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="mb-4">
-                  <div class="bg-white py-4 shadow-lg rounded-3">
+                  <div
+                    class="bg-white py-4 shadow-lg rounded-3"
+                    style="height: 348px"
+                  >
                     <h5 class="mb-5 ms-4">Title Note</h5>
                     <div class="">
                       <div
@@ -590,17 +614,44 @@
                       >
                         <p class="fw-semibold">Tutor Requirement</p>
                         <p class="">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
+                          Lorem Ipsum is simply dummy text of the
+                          printing
+                          <button
+                            tabindex="0"
+                            style="border: none"
+                            class="badge rounded-pill  text-gray-700"
+                            role="button"
+                            data-bs-toggle="popover"
+                            data-bs-trigger="focus"
+                            title="Tutor Requirement"
+                            data-bs-content="Lorem Ipsum is simply dummy text of the
+                            printing.Lorem Ipsum is simply dummy text of the
+                            printing.Lorem Ipsum is simply dummy text of the"
+                          >
+                            •••
+                          </button>
                         </p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Special Note</p>
                         <p class="">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry.
+                          Lorem Ipsum is simply dummy text of the printing
+                          <button
+                            tabindex="0"
+                            style="border: none"
+                            class="badge rounded-pill  text-gray-700"
+                            role="button"
+                            data-bs-toggle="popover"
+                            data-bs-trigger="focus"
+                            title="Special Note"
+                            data-bs-content="Lorem Ipsum is simply dummy text of the
+                            printing.Lorem Ipsum is simply dummy text of the
+                            printing.Lorem Ipsum is simply dummy text of the"
+                          >
+                            •••
+                          </button>
                         </p>
                       </div>
                       <div
@@ -617,9 +668,11 @@
                     <h5 class="mb-5 ms-4">Tutor Requirement -1</h5>
                     <div class="">
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
-                        <p class="fw-semibold">Preferred Tutoring Category</p>
+                        <p class="fw-semibold">
+                          Preferred Tutoring Category
+                        </p>
                         <p class="">Professional Skills Mastery</p>
                       </div>
                       <div
@@ -629,7 +682,7 @@
                         <p class="">N/A</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Subjects</p>
                         <p class="">Math</p>
@@ -709,7 +762,7 @@
                         <p class="">Dhaka</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Group</p>
                         <p class="">Science</p>
@@ -729,13 +782,13 @@
                     <h5 class="mb-5 ms-4">Source Information</h5>
                     <div class="">
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                       >
                         <p class="fw-semibold">Source</p>
                         <p class="">Affiliate marketing</p>
                       </div>
                       <div
-                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
+                        class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4 edited"
                       >
                         <p class="fw-semibold">Source Name</p>
                         <p class="">Rohim</p>
@@ -782,6 +835,14 @@
     ></script>
     <script src="/js/sidebar.js"></script>
     <script src="/js/owl/owl.carousel.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
