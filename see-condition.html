@@ -390,7 +390,7 @@
               <div class="p-2 shadow-lg rounded-3 bg-white">
                 <div class="table-responsive">
                   <table
-                    class="table table-hover bg-white shadow-none "
+                    class="table table-hover bg-white shadow-none"
                     style="border-collapse: collapse"
                   >
                     <thead style="border-bottom: 1px solid #c8ced3">
@@ -416,8 +416,16 @@
                         >
                           01
                         </td>
-                        <td class="text-info ">246785</td>
-                        <td class="text-nowrap">Abdur Rahman</td>
+                        <td>
+                          <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
+                        <td>
+                          <a href="#" class="text-decoration-none text-info"
+                            >Abdur Rahman</a
+                          >
+                        </td>
 
                         <td class="text-info">
                           <a
@@ -467,8 +475,16 @@
                         >
                           01
                         </td>
-                        <td class="text-info">246785</td>
-                        <td class="text-nowrap">Abdur Rahman</td>
+                        <td>
+                          <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
+                        <td>
+                          <a href="#" class="text-decoration-none text-info"
+                            >Abdur Rahman</a
+                          >
+                        </td>
 
                         <td class="text-info">
                           <a
@@ -534,7 +550,7 @@
                     Note Details
                   </h5>
                 </div>
-                <div class="modal-body pe-0 ps-3">
+                <div class="modal-body">
                   <div>
                     <div
                       class="p-3 bg-light rounded-3 border border-1 border-dark mb-3"
@@ -544,7 +560,40 @@
                       >
                         <div>
                           <p class="mb-0 text-dark fs-5">Sohag Sarkar</p>
-                          <p class="text-info">ID-23456</p>
+                          <p class="text-info" style="font-size: 12px">
+                            ID-23456
+                          </p>
+                        </div>
+                        <div><p>June 17, 2023</p></div>
+                      </div>
+                      <p>
+                        doloremque dolorem dolor, delectus repellendus expedita
+                        modi distinctio voluptate voluptas impedit. Corrupti est
+                        expedita non qui accusamus illum quam, cum cumque saepe
+                        excepturi rem.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <p>Read More</p>
+                        </div>
+                        <div>
+                          <button class="btn btn-primary py-1">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="p-3 bg-light rounded-3 border border-1 border-dark mb-3"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div>
+                          <p class="mb-0 text-danger fs-5">Sajid HDY</p>
+                          <p class="text-info" style="font-size: 12px">
+                            ID-23456
+                          </p>
                         </div>
                         <div><p>June 17, 2023</p></div>
                       </div>
@@ -573,7 +622,9 @@
                       >
                         <div>
                           <p class="mb-0 text-dark fs-5">Sohag Sarkar</p>
-                          <p class="text-info">ID-23456</p>
+                          <p class="text-info" style="font-size: 12px">
+                            ID-23456
+                          </p>
                         </div>
                         <div><p>June 17, 2023</p></div>
                       </div>
@@ -590,36 +641,7 @@
                           <p>Read More</p>
                         </div>
                         <div>
-                          <button class="btn btn-primary py-1">Edit</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="p-3 bg-light rounded-3 border border-1 border-dark mb-3"
-                    >
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div>
-                          <p class="mb-0 text-dark fs-5">Sohag Sarkar</p>
-                          <p class="text-info">ID-23456</p>
-                        </div>
-                        <div><p>June 17, 2023</p></div>
-                      </div>
-                      <p>
-                        doloremque dolorem dolor, delectus repellendus expedita
-                        modi distinctio voluptate voluptas impedit. Corrupti est
-                        expedita non qui accusamus illum quam, cum cumque saepe
-                        excepturi rem.
-                      </p>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div>
-                          <p>Read More</p>
-                        </div>
-                        <div>
-                          <button class="btn btn-primary py-1">Edit</button>
+                          <button class="btn btn-warning py-1">Edited</button>
                         </div>
                       </div>
                     </div>
@@ -662,7 +684,7 @@
                         type="text"
                         class="form-control shadow-none rounded-3"
                         id="exampleFormControlInput1"
-                        placeholder=" "
+                        placeholder="Maximum 8 words can be given "
                       />
                     </div>
                     <div>
@@ -675,6 +697,7 @@
                         class="form-control shadow-none rounded-3"
                         id="exampleFormControlTextarea1"
                         rows="3"
+                        placeholder="Maximum 30 words can be given"
                       ></textarea>
                     </div>
                   </form>
@@ -682,7 +705,7 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-light"
+                    class="btn btn-light shadow-lg"
                     data-bs-dismiss="modal"
                   >
                     Close
@@ -708,15 +731,21 @@
                 <div class="modal-body p-0">
                   <table class="table shadow-none">
                     <thead
-                      class=""
+                      class="text-dark"
                       style="background-color: #3378c2; color: white"
                     >
                       <tr class="">
-                        <th scope="col" style="border-top-left-radius: 8px">
+                        <th
+                          scope="col"
+                          class="border-end border-1"
+                          style="border-top-left-radius: 8px"
+                        >
                           Name
                         </th>
-                        <th scope="col" class="text-nowrap">Em ID</th>
-                        <th scope="col">Date</th>
+                        <th scope="col" class="text-nowrap border-end border-1">
+                          Em ID
+                        </th>
+                        <th scope="col" class="border-end border-1">Date</th>
                         <th
                           scope="col"
                           class="text-nowrap"
@@ -727,21 +756,25 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row" class="text-nowrap">Fahmida Rahman</th>
-                        <td class="text-info">234567</td>
-                        <td class="text-nowrap">
+                      <tr class="" style="vertical-align: middle">
+                        <th scope="row" class="text-nowrap border-end border-1">
+                          Fahmida Rahman
+                        </th>
+                        <td class="text-info border-end border-1">234567</td>
+                        <td class="text-nowrap border-end border-1">
                           <p class="mb-0">14-06-2023</p>
                           <p class="mb-0 text-muted">47: 15: 12 PM</p>
                         </td>
                         <td>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Reprehenderit molestias magnam doloribus impedit
-                          sunt ducimus inventore voluptas numquam eum ad
-                          corporis aperiam harum quo, explicabo officiis
-                          suscipit, reiciendis architecto veniam amet sequi,
-                          facere placeat illo veritatis. Dignissimos eius
-                          quibusdam tempora!
+                          <p class="border border-info p-2 rounded-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Reprehenderit molestias magnam doloribus
+                            impedit sunt ducimus inventore voluptas numquam eum
+                            ad corporis aperiam harum quo, explicabo officiis
+                            suscipit, reiciendis architecto veniam amet sequi,
+                            facere placeat illo veritatis. Dignissimos eius
+                            quibusdam tempora!
+                          </p>
                         </td>
                       </tr>
                     </tbody>

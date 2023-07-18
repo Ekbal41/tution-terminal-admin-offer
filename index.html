@@ -417,7 +417,7 @@
             </div>
             <!-- mini nav ends here -->
             <!-- main content section starts here -->
-            <div class="ps-3" style="padding-right: 13px;">
+            <div class="ps-3" style="padding-right: 13px">
               <div class="owl-carousel">
                 <div
                   class="bg-white p-3 rounded-3 shadow-lg d-flex justify-content-center align-items-center flex-column mb-2"
@@ -453,7 +453,7 @@
               <div
                 class="d-flex justify-content-between flex-column flex-lg-row gap-2 gap-lg-0"
               >
-                <div class="">
+                <div class="d-flex justify-content-between gap-3">
                   <button
                     class="btn btn-primary"
                     data-bs-toggle="modal"
@@ -463,17 +463,17 @@
                   </button>
                   <button class="btn btn-outline-dark">Send Bulk SMS</button>
                 </div>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-3">
                   <input
                     type="text"
                     class="form-control rounded"
                     placeholder="Search"
                   />
                   <select class="form-select rounded" style="width: 100px">
-                    <option selected>50</option>
-                    <option value="1">100</option>
-                    <option value="2">200</option>
-                    <option value="3">300</option>
+                    <option selected>100</option>
+                    <option value="1">200</option>
+                    <option value="2">400</option>
+                    <option value="3">500</option>
                   </select>
                 </div>
               </div>
@@ -484,8 +484,11 @@
                       class="table table-hover bg-white shadow-none"
                       style="border-collapse: collapse"
                     >
-                    <thead style="border-bottom: 1px solid #c8ced3">
-                      <tr>
+                      <thead
+                        class="text-dark"
+                        style="border-bottom: 1px solid #c8ced3"
+                      >
+                        <tr>
                           <th scope="col" class="text-nowrap">
                             <input
                               class="form-check-input me-2 ms-2"
@@ -528,7 +531,9 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -553,8 +558,16 @@
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
                             <a
-                              class="bg-primary text-white px-2 rounded-pill text-decoration-none"
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              6
+                            </a>
+
+                            <a
+                              class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
                               4
@@ -592,9 +605,19 @@
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
-                            />06-06-2023
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -606,12 +629,28 @@
                           <td class="">Class-8</td>
                           <td class="text-wrap">Tolarbag, Mirpur</td>
                           <td>5000</td>
-                          <td class="text-info">EM</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
                             <a
-                              class="bg-primary text-white px-2 rounded-pill text-decoration-none"
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              6
+                            </a>
+                            <a
+                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
                               4
@@ -629,7 +668,13 @@
                             </div>
                           </td>
                           <td>
-                            <button class="btn btn-primary py-1">Action</button>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
                           </td>
                         </tr>
                         <tr class="" style="vertical-align: middle">
@@ -643,9 +688,19 @@
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
-                            />06-06-2023
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -657,15 +712,33 @@
                           <td class="">Class-8</td>
                           <td class="text-wrap">Tolarbag, Mirpur</td>
                           <td>5000</td>
-                          <td class="text-info">EM</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
-                            <span
-                              class="bg-primary text-white px-2 rounded-pill"
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              645
+                            </a>
+
+                            <a
+                              class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
                             >
                               4
-                            </span>
+                            </a>
                           </td>
                           <td>
                             <div class="form-check form-switch">
@@ -679,7 +752,13 @@
                             </div>
                           </td>
                           <td>
-                            <button class="btn btn-primary py-1">Action</button>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
                           </td>
                         </tr>
                         <tr class="" style="vertical-align: middle">
@@ -693,9 +772,19 @@
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
-                            />06-06-2023
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -707,15 +796,32 @@
                           <td class="">Class-8</td>
                           <td class="text-wrap">Tolarbag, Mirpur</td>
                           <td>5000</td>
-                          <td class="text-info">EM</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
-                            <span
-                              class="bg-primary text-white px-2 rounded-pill"
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
                             >
-                              4
-                            </span>
+                              6
+                            </a>
+                            <a
+                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
+                            >
+                              4234
+                            </a>
                           </td>
                           <td>
                             <div class="form-check form-switch">
@@ -729,7 +835,13 @@
                             </div>
                           </td>
                           <td>
-                            <button class="btn btn-primary py-1">Action</button>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
                           </td>
                         </tr>
                         <tr class="" style="vertical-align: middle">
@@ -743,9 +855,19 @@
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
-                            />06-06-2023
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -757,15 +879,33 @@
                           <td class="">Class-8</td>
                           <td class="text-wrap">Tolarbag, Mirpur</td>
                           <td>5000</td>
-                          <td class="text-info">EM</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
-                            <span
-                              class="bg-primary text-white px-2 rounded-pill"
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
                             >
-                              4
-                            </span>
+                              6
+                            </a>
+
+                            <a
+                              class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
+                            >
+                              4234
+                            </a>
                           </td>
                           <td>
                             <div class="form-check form-switch">
@@ -779,7 +919,13 @@
                             </div>
                           </td>
                           <td>
-                            <button class="btn btn-primary py-1">Action</button>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
                           </td>
                         </tr>
                         <tr class="" style="vertical-align: middle">
@@ -793,9 +939,19 @@
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
-                            />06-06-2023
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
                           </td>
-                          <td class="text-info">246785</td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -807,15 +963,32 @@
                           <td class="">Class-8</td>
                           <td class="text-wrap">Tolarbag, Mirpur</td>
                           <td>5000</td>
-                          <td class="text-info">EM</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
                           <td class="text-nowrap">Khalid Rahman</td>
                           <td class="text-center">
-                            <span
-                              class="bg-primary text-white px-2 rounded-pill"
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
                               style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              6
+                            </a>
+                            <a
+                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
                             >
                               4
-                            </span>
+                            </a>
                           </td>
                           <td>
                             <div class="form-check form-switch">
@@ -829,7 +1002,180 @@
                             </div>
                           </td>
                           <td>
-                            <button class="btn btn-primary py-1">Action</button>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="" style="vertical-align: middle">
+                          <td
+                            scope="row "
+                            class="text-center text-nowrap"
+                            style="padding: 30px 18px"
+                          >
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
+                          </td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
+                          <td class="text-info">
+                            <a
+                              href="job.html"
+                              class="p-1 rounded text-info text-decoration-none"
+                              style="background-color: #e6eef7"
+                              >23457</a
+                            >
+                          </td>
+                          <td class="">Class-8</td>
+                          <td class="text-wrap">Tolarbag, Mirpur</td>
+                          <td>5000</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
+                          <td class="text-nowrap">Khalid Rahman</td>
+                          <td class="text-center">
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
+                              style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              123
+                            </a>
+
+                            <a
+                              class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
+                            >
+                              4234
+                            </a>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="flexSwitchCheckDefault"
+                                style="transform: scale(1.5)"
+                              />
+                            </div>
+                          </td>
+                          <td>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="" style="vertical-align: middle">
+                          <td
+                            scope="row "
+                            class="text-center text-nowrap"
+                            style="padding: 30px 18px"
+                          >
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
+                          </td>
+                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          ></td>
+                          <td class="text-info">
+                            <a
+                              href="job.html"
+                              class="p-1 rounded text-info text-decoration-none"
+                              style="background-color: #e6eef7"
+                              >23457</a
+                            >
+                          </td>
+                          <td class="">Class-8</td>
+                          <td class="text-wrap">Tolarbag, Mirpur</td>
+                          <td>5000</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
+                          <td class="text-nowrap">Khalid Rahman</td>
+                          <td class="text-center">
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
+                              style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              6124
+                            </a>
+                            <a
+                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
+                            >
+                              43566
+                            </a>
+                          </td>
+                          <td>
+                            <div class="form-check form-switch">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="flexSwitchCheckDefault"
+                                style="transform: scale(1.5)"
+                              />
+                            </div>
+                          </td>
+                          <td>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
                           </td>
                         </tr>
                       </tbody>
@@ -910,7 +1256,7 @@
                 </div>
                 <div class="modal-body py-0">
                   <div class="row row-cols-2 row-cols-lg-4 pb-2">
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Date from</label>
                       <input
                         type="date"
@@ -918,7 +1264,7 @@
                         id="date"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Country</label>
 
                       <select
@@ -931,7 +1277,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Category</label>
 
                       <select
@@ -944,7 +1290,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 ">
                       <label for="date" class="form-label">Source</label>
 
                       <select
@@ -957,7 +1303,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Date To</label>
                       <input
                         type="date"
@@ -965,7 +1311,7 @@
                         id="date"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">City</label>
 
                       <select
@@ -978,7 +1324,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Course</label>
 
                       <select
@@ -991,7 +1337,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 ">
                       <label for="date" class="form-label">Source ID</label>
 
                       <select
@@ -1004,7 +1350,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="name" class="form-label">Created By</label>
                       <input
                         type="text"
@@ -1013,7 +1359,7 @@
                         placeholder="Yasin Ahammed"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Location</label>
 
                       <select
@@ -1026,7 +1372,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Subjects</label>
 
                       <select
@@ -1039,7 +1385,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 ">
                       <label for="date" class="form-label"
                         >Tutoring Method</label
                       >
@@ -1056,9 +1402,9 @@
                     </div>
                   </div>
 
-                  <div class="collapse" id="collapseExample">
+                  <div class="collapse border-top border-2 pt-1" id="collapseExample">
                     <div class="row row-cols-2 row-cols-lg-4 pt-2">
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label">Salary</label>
 
                         <input
@@ -1068,7 +1414,7 @@
                           placeholder="5000"
                         />
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label">
                           Gender Requirement
                         </label>
@@ -1081,7 +1427,7 @@
                           <option value="1">Female</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label"
                           >Student Gender</label
                         >
@@ -1094,7 +1440,7 @@
                           <option value="1">Femake</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3">
                         <label for="date" class="form-label">
                           Institute Name
                         </label>
@@ -1109,7 +1455,7 @@
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label">Channel</label>
 
                         <select
@@ -1122,7 +1468,7 @@
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label"
                           >Days and Week</label
                         >
@@ -1135,7 +1481,7 @@
                           <option value="1">5 days</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label">Religion</label>
 
                         <select
@@ -1146,7 +1492,7 @@
                           <option value="1">Hindu</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 ">
                         <label for="date" class="form-label">Hide Offer</label>
 
                         <select
@@ -1223,8 +1569,8 @@
                   <div class="row row-cols-2 g-0">
                     <div class="d-flex flex-column border-end">
                       <div
-                        class="bg-info text-white px-4"
-                        style="border-radius: 8px 0 0 0; padding: 35px 0"
+                        class=" text-white px-4"
+                        style="border-radius: 8px 0 0 0; padding: 35px 0; background-color: #3378C2;"
                       >
                         EM-1
                       </div>
@@ -1235,8 +1581,8 @@
                     </div>
                     <div class="d-flex flex-column">
                       <div
-                        class="bg-info text-white px-4"
-                        style="border-radius: 0 8px 0 0; padding: 35px 0"
+                        class=" text-white px-4"
+                        style="border-radius: 0 8px 0 0; padding: 35px 0;background-color: #3378C2;"
                       >
                         EM-2
                       </div>
@@ -1265,17 +1611,19 @@
             >
               <div class="modal-content">
                 <div class="modal-body p-4">
+                 <div class="d-flex justify-content-center align-items-center gap-3">
                   <a class="btn btn-dark" href="see-condition.html"
-                    >See Condition</a
-                  >
-                  <a class="btn btn-dark" href="status-log.html">Status Log</a>
-                  <button class="btn btn-primary">Edit</button>
-                  <button class="btn btn-info">Hide Log</button>
+                  >See Condition</a
+                >
+                <a class="btn btn-dark" href="status-log.html">Status Log</a>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-pink">Hide</button>
 
-                  <a class="btn btn-dark" href="search-tutor.html"
-                    >Search Tutor</a
-                  >
-                  <a class="btn btn-dark ms-1" href="sms-log.html">SMS Log</a>
+                <a class="btn btn-dark" href="search-tutor.html"
+                  >Search Tutor</a
+                >
+                <a class="btn btn-dark" href="sms-log.html">SMS Log</a>
+                 </div>
                 </div>
               </div>
             </div>

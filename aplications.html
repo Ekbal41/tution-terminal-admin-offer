@@ -449,7 +449,7 @@
               <div
                 class="d-flex justify-content-between flex-column flex-lg-row gap-2 gap-lg-0"
               >
-                <div class="">
+                <div class="d-flex gap-3">
                   <button
                     class="btn btn-primary"
                     data-bs-toggle="modal"
@@ -459,7 +459,7 @@
                   </button>
                   <button class="btn btn-outline-dark">Send Bulk SMS</button>
                 </div>
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-3">
                   <button
                     class="btn btn-info text-nowrap"
                     data-bs-toggle="modal"
@@ -473,21 +473,21 @@
                     placeholder="Search"
                   />
                   <select class="form-select rounded" style="width: 100px">
-                    <option selected>50</option>
-                    <option value="1">100</option>
-                    <option value="2">200</option>
-                    <option value="3">300</option>
+                    <option selected>100</option>
+                    <option value="1">200</option>
+                    <option value="2">400</option>
+                    <option value="3">500</option>
                   </select>
                 </div>
               </div>
               <div class="bg-white pb-4 mb-b shadow-lg rounded-3 p-2 my-4">
-                <div class=" table-responsive">
+                <div class="table-responsive">
                   <table
                     class="table table-hover bg-white shadow-none"
                     style="border-collapse: collapse"
                   >
-                  <thead style="border-bottom: 1px solid #c8ced3">
-                    <tr>
+                    <thead class="text-dark" style="border-bottom: 1px solid #c8ced3">
+                      <tr>
                         <th scope="col" class="text-nowrap">
                           <input
                             class="form-check-input me-2 ms-2"
@@ -529,7 +529,11 @@
                             06-06-2023
                           </a>
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="text-info">
+                          <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
                         <td class="text-nowrap">Bangla Medium</td>
                         <td class="">Class-8</td>
                         <td class="text-wrap">Tolarbag, Mirpur</td>
@@ -546,8 +550,8 @@
                         <td class="text-nowrap">2</td>
                         <td class="">
                           <a
-                            class="bg-primary text-white px-2 rounded-pill text-decoration-none"
-                            style="width: fit-content"
+                            class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                            style="padding: 0px 5px 0px 5px"
                             href="aplicant-list.html"
                           >
                             4
@@ -575,7 +579,11 @@
                             06-06-2023
                           </a>
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="text-info">
+                          <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
                         <td class="text-nowrap">Bangla Medium</td>
                         <td class="">Class-8</td>
                         <td class="text-wrap">Tolarbag, Mirpur</td>
@@ -592,8 +600,8 @@
                         <td class="text-nowrap">2</td>
                         <td class="">
                           <a
-                            class="bg-primary text-white px-2 rounded-pill text-decoration-none"
-                            style="width: fit-content"
+                            class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                            style="padding: 0px 5px 0px 5px"
                             href="aplicant-list.html"
                           >
                             4
@@ -621,7 +629,11 @@
                             06-06-2023
                           </a>
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="text-info">
+                          <a href="#" class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
                         <td class="text-nowrap">Bangla Medium</td>
                         <td class="">Class-8</td>
                         <td class="text-wrap">Tolarbag, Mirpur</td>
@@ -638,8 +650,8 @@
                         <td class="text-nowrap">2</td>
                         <td class="">
                           <a
-                            class="bg-primary text-white px-2 rounded-pill text-decoration-none"
-                            style="width: fit-content"
+                            class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
+                            style="padding: 0px 5px 0px 5px"
                             href="aplicant-list.html"
                           >
                             4
@@ -794,7 +806,7 @@
                     </div>
 
                     <div class="mb-3">
-                      <label for="name" class="form-label">Job By</label>
+                      <label for="name" class="form-label">Job Id</label>
                       <input
                         type="text"
                         class="form-control shadow rounded-2"
@@ -879,8 +891,12 @@
                   <div class="row row-cols-2 g-0">
                     <div class="d-flex flex-column border-end">
                       <div
-                        class="bg-info text-white px-4"
-                        style="border-radius: 8px 0 0 0; padding: 35px 0"
+                        class="text-white px-4"
+                        style="
+                          border-radius: 8px 0 0 0;
+                          padding: 35px 0;
+                          background-color: #3378c2;
+                        "
                       >
                         EM-1
                       </div>
@@ -891,8 +907,12 @@
                     </div>
                     <div class="d-flex flex-column">
                       <div
-                        class="bg-info text-white px-4"
-                        style="border-radius: 0 8px 0 0; padding: 35px 0"
+                        class="text-white px-4"
+                        style="
+                          border-radius: 0 8px 0 0;
+                          padding: 35px 0;
+                          background-color: #3378c2;
+                        "
                       >
                         EM-2
                       </div>
@@ -928,20 +948,28 @@
                     <input
                       type="text"
                       class="form-control mb-3 shadow-none rounded-2"
-                      placeholder=""
+                      placeholder="Ex : 23467"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Job Id </label>
+                    <input
+                      type="text"
+                      class="form-control mb-3 shadow-none rounded-2"
+                      placeholder="Ex : A000005"
                     />
                   </div>
                 </div>
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-light"
+                    class="btn btn-light shadow-lg"
                     data-bs-dismiss="modal"
                   >
                     Close
                   </button>
                   <button type="button" class="btn btn-primary">
-                    Save changes
+                    Save change
                   </button>
                 </div>
               </div>

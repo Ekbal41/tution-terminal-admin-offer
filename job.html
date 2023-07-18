@@ -397,8 +397,8 @@
               <ul class="nav nav-tabs row row-cols-2" id="myTab" role="tablist">
                 <li>
                   <button
-                    class="w-100 nav-link active bg-white"
-                    id="details-tab"
+                    class="w-100 nav-link active text-muted rounded-3 bg-white"
+                    id="details-taby"
                     data-bs-toggle="tab"
                     data-bs-target="#details-tab-pane"
                     type="button"
@@ -411,8 +411,8 @@
                 </li>
                 <li class="">
                   <button
-                    class="w-100 nav-link bg-white"
-                    id="history-tab"
+                    class="w-100 nav-link bg-white text-muted rounded-3"
+                    id="history-taby"
                     data-bs-toggle="tab"
                     data-bs-target="#history-tab-pane"
                     type="button"
@@ -451,7 +451,14 @@
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                           >
                             <p class="fw-semibold">Parents ID</p>
-                            <p class="">2345</p>
+                            <p class="">
+                              <a
+                                href="#
+                            job.html"
+                                class="text-decoration-none text-info"
+                                >12345</a
+                              >
+                            </p>
                           </div>
                           <div
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
@@ -493,7 +500,14 @@
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                           >
                             <p class="fw-semibold">Reference ID</p>
-                            <p class="">2345</p>
+                            <p class="">
+                              <a
+                                href="#
+                            job.html"
+                                class="text-decoration-none text-info"
+                                >12345</a
+                              >
+                            </p>
                           </div>
                           <div
                             class="m-4 p-4 rounded-3 d-flex justify-content-between align-items-center flex-column"
@@ -625,18 +639,20 @@
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                           >
                             <p class="fw-semibold">Details Address</p>
-                            <p class="">10/5, Tolarbagh<button
-                              tabindex="0"
-                              style="border: none"
-                              class="badge rounded-pill  text-gray-700 ms-1"
-                              role="button"
-                              data-bs-toggle="popover"
-                              data-bs-trigger="focus"
-                              title="Details Address"
-                              data-bs-content="10/5, Tolarbagh, Mirpur-1, Dhaka , Bangladesh."
-                            >
-                              •••
-                            </button></p>
+                            <p class="">
+                              10/5, Tolarbagh<button
+                                tabindex="0"
+                                style="border: none"
+                                class="badge rounded-pill text-gray-700 ms-1"
+                                role="button"
+                                data-bs-toggle="popover"
+                                data-bs-trigger="focus"
+                                title="Details Address"
+                                data-bs-content="10/5, Tolarbagh, Mirpur-1, Dhaka , Bangladesh."
+                              >
+                                •••
+                              </button>
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -653,12 +669,11 @@
                           >
                             <p class="fw-semibold">Tutor Requirement</p>
                             <p class="">
-                              Lorem Ipsum is simply dummy text of the
-                              printing
+                              Lorem Ipsum is simply dummy text of the printing
                               <button
                                 tabindex="0"
                                 style="border: none"
-                                class="badge rounded-pill  text-gray-700"
+                                class="badge rounded-pill text-gray-700"
                                 role="button"
                                 data-bs-toggle="popover"
                                 data-bs-trigger="focus"
@@ -680,7 +695,7 @@
                               <button
                                 tabindex="0"
                                 style="border: none"
-                                class="badge rounded-pill  text-gray-700"
+                                class="badge rounded-pill text-gray-700"
                                 role="button"
                                 data-bs-toggle="popover"
                                 data-bs-trigger="focus"
@@ -836,7 +851,14 @@
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
                           >
                             <p class="fw-semibold">Source ID</p>
-                            <p class="">23456</p>
+                            <p class="">
+                              <a
+                                href="#
+                            job.html"
+                                class="text-decoration-none text-info"
+                                >12345</a
+                              >
+                            </p>
                           </div>
                           <div
                             class="row row-cols-2 border-bottom border-1 mb-3 g-0 mx-4"
@@ -871,7 +893,10 @@
                         class="table table-hover bg-white shadow-none"
                         style="border-collapse: collapse"
                       >
-                        <thead style="border-bottom: 1px solid #c8ced3">
+                        <thead
+                          class="text-dark"
+                          style="border-bottom: 1px solid #c8ced3"
+                        >
                           <tr>
                             <th scope="col">sl</th>
                             <th scope="col" class="text-nowrap">Job ID</th>
@@ -906,12 +931,12 @@
                             <td>34578</td>
                             <td class="">Md. Rakibul Hasan</td>
                             <td class="text-nowrap">
-                              <p class="mb-0 mt-3">16-06-2023</p>
+                              <p class="mb-0 mt-3">16-01-2023</p>
                               <p class="text-muted">47: 15: 12 PM</p>
                             </td>
                             <td>
                               <a
-                                href="job-edit-history.html"
+                                href="job-edit-history-original.html"
                                 class="btn btn-primary text-nowrap"
                               >
                                 View Details
@@ -949,6 +974,12 @@
       );
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+    <script>
+      $(".tabsBtn").on("click", ".btn", function () {
+        $(".tabsBtn .btn").removeClass("activeClass");
+        $(this).addClass("activeClass");
       });
     </script>
     <script>

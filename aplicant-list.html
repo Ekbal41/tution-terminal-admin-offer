@@ -394,14 +394,27 @@
                 class="d-flex justify-content-between bg-white p-4 rounded-3 shadow-lg align-items-center mb-4"
               >
                 <p class="fs-3 m-0 fw-bold">Total Aplications List-1</p>
-                <button class="btn btn-info">+ Add New</button>
+                <button
+                  class="btn btn-info text-nowrap"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  + Add New
+                </button>
               </div>
               <div class="bg-white p-4 rounded-3 shadow-lg">
                 <div class="row row-cols-1 row-cols-lg-2 pt-2">
                   <div class="">
                     <div class="row row-cols-2 border-bottom border-1 mb-3 g-0">
                       <p class="fw-semibold">Job ID</p>
-                      <p class="text-info">23456</p>
+                      <p class="text-info">
+                        <a
+                          href="#
+                        job.html"
+                          class="text-decoration-none text-info"
+                          >12345</a
+                        >
+                      </p>
                     </div>
                     <div class="row row-cols-2 border-bottom border-1 mb-3 g-0">
                       <p class="fw-semibold">Category</p>
@@ -446,10 +459,10 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <button class="btn btn-outline-dark">Send Bulk SMS</button>
                   <select class="form-select rounded" style="width: 100px">
-                    <option selected>50</option>
-                    <option value="1">100</option>
-                    <option value="2">200</option>
-                    <option value="3">300</option>
+                    <option selected>25</option>
+                    <option value="1">50</option>
+                    <option value="2">100</option>
+                    <option value="3">200</option>
                   </select>
                 </div>
                 <div class="mt-4 table-responsive">
@@ -457,7 +470,10 @@
                     class="table table-hover bg-white shadow-none"
                     style="border-collapse: collapse; width: 100%"
                   >
-                    <thead style="border-bottom: 1px solid #c8ced3">
+                    <thead
+                      class="text-dark"
+                      style="border-bottom: 1px solid #c8ced3"
+                    >
                       <tr>
                         <th
                           scope="col"
@@ -476,7 +492,7 @@
                         <th class="text-nowrap">Tutor Name</th>
                         <th class="text-nowrap">Tutor ID</th>
                         <th class="text-nowrap">Match</th>
-                        <th class="text-nowrap">Token By</th>
+                        <th class="text-nowrap">Taken By</th>
                         <th class="text-nowrap">Action</th>
                       </tr>
                     </thead>
@@ -502,7 +518,13 @@
                             06-06-2023
                           </a>
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="">
+                          <a
+                            href="job.html"
+                            class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
                         <td class="">23456</td>
                         <td class="text-info text-nowrap">
                           Abdul Hatem<i class="bi bi-patch-check ms-1"></i
@@ -517,7 +539,7 @@
 
                         <td class="text-nowrap">
                           <button class="btn btn-dark py-1 px-2">Take</button>
-                          <button class="btn btn-light py-1 px-2">
+                          <button class="btn btn-pink py-1 px-2">
                             Shortlist
                           </button>
 
@@ -552,7 +574,13 @@
                             06-06-2023
                           </a>
                         </td>
-                        <td class="text-info">246785</td>
+                        <td class="">
+                          <a
+                            href="job.html"
+                            class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
                         <td class="">23456</td>
                         <td class="text-info text-nowrap">
                           Abdul Hatem<i class="bi bi-patch-check ms-1"></i>
@@ -566,8 +594,120 @@
 
                         <td class="text-nowrap">
                           <button class="btn btn-dark py-1 px-2">Take</button>
-                          <button class="btn btn-light py-1 px-2">
+                          <button class="btn btn-pink py-1 px-2">
                             Shortlist
+                          </button>
+
+                          <button class="btn btn-primary py-1 px-2">
+                            Note
+                          </button>
+                          <button class="btn btn-info py-1 px-2">
+                            Create A Note
+                          </button>
+
+                          <button class="btn btn-warning py-1 px-2">Log</button>
+                        </td>
+                      </tr>
+                      <tr class="" style="vertical-align: middle">
+                        <td
+                          scope="row "
+                          class="text-center text-nowrap"
+                          style="padding: 30px 0px"
+                        >
+                          <input
+                            class="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <a
+                            type="button"
+                            class="text-decoration-none text-gray-700"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2"
+                          >
+                            06-06-2023
+                          </a>
+                        </td>
+                        <td class="">
+                          <a
+                            href="job.html"
+                            class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
+                        <td class="">23456</td>
+                        <td class="text-info text-nowrap">
+                          Abdul Hatem<i class="bi bi-patch-check ms-1"></i>
+                        </td>
+                        <td>
+                          <span class="">23456</span>
+                        </td>
+                        <td>23</td>
+
+                        <td class="text-nowrap">Khalid Rahman</td>
+
+                        <td class="text-nowrap">
+                          <button class="btn btn-outline-dark py-1 px-2">
+                            Taken
+                          </button>
+                          <button class="btn btn-pink py-1 px-2">
+                            Shortlist
+                          </button>
+
+                          <button class="btn btn-primary py-1 px-2">
+                            Note
+                          </button>
+                          <button class="btn btn-info py-1 px-2">
+                            Create A Note
+                          </button>
+
+                          <button class="btn btn-warning py-1 px-2">Log</button>
+                        </td>
+                      </tr>
+                      <tr class="" style="vertical-align: middle">
+                        <td
+                          scope="row "
+                          class="text-center text-nowrap"
+                          style="padding: 30px 0px"
+                        >
+                          <input
+                            class="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <a
+                            type="button"
+                            class="text-decoration-none text-gray-700"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2"
+                          >
+                            06-06-2023
+                          </a>
+                        </td>
+                        <td class="">
+                          <a
+                            href="job.html"
+                            class="text-decoration-none text-info"
+                            >12345</a
+                          >
+                        </td>
+                        <td class="">23456</td>
+                        <td class="text-info text-nowrap">
+                          Abdul Hatem<i class="bi bi-patch-check ms-1"></i>
+                        </td>
+                        <td>
+                          <span class="">23456</span>
+                        </td>
+                        <td>23</td>
+
+                        <td class="text-nowrap">Khalid Rahman</td>
+
+                        <td class="text-nowrap">
+                          <button class="btn btn-dark py-1 px-2">Take</button>
+                          <button class="btn btn-outline-pink py-1 px-2">
+                            Shortlisted
                           </button>
 
                           <button class="btn btn-primary py-1 px-2">
@@ -607,6 +747,48 @@
               </div>
             </div>
             <!--Date model ends here-->
+            <!-- Add AplicationModal -->
+            <div
+              class="modal fade"
+              id="exampleModal4"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Add New Aplication
+                    </h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="name" class="form-label"
+                        >Tutor Id/Phone</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control mb-3 shadow-none rounded-2"
+                        placeholder="Ex : 23467"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-light shadow-lg"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save change
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>

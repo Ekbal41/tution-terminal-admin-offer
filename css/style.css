@@ -96,3 +96,39 @@ body {
   font-weight: bolder;
   pointer-events: inherit;
 }
+
+.btn-pink {
+  background-color: #f26969;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-pink:hover {
+  background-color: #ef6060;
+  color: white;
+}
+
+.btn-outline-pink {
+  background-color: white;
+  color: #f26969;
+  border: 1px solid #f26969;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-outline-pink:hover {
+  background-color: #f26969;
+  color: white;
+}
+
+.nav-tabs > li > button.active {
+  border: 2px solid #3378c2 !important;
+}
+.nav-tabs > li > button {
+  box-shadow: none !important;
+}
