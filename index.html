@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/color_palets.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/custom-switch-and-checkbox.css" />
+
     <link rel="stylesheet" href="/css/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css" />
 
@@ -531,9 +533,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -574,14 +578,22 @@
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
+                            <div class="onoffswitch">
                               <input
-                                class="form-check-input"
                                 type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
+                                name="onoffswitch"
+                                class="onoffswitch-checkbox"
+                                id="myonoffswitch"
+                                tabindex="0"
+                                checked
                               />
+                              <label
+                                class="onoffswitch-label"
+                                for="myonoffswitch"
+                              >
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                              </label>
                             </div>
                           </td>
                           <td>
@@ -615,9 +627,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -698,9 +712,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -782,9 +798,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -865,9 +883,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -949,9 +969,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -1032,9 +1054,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -1116,9 +1140,11 @@
                               06-06-2023
                             </a>
                           </td>
-                          <td class="text-info"> <a href="#" class="text-decoration-none text-info"
-                            >12345</a
-                          ></td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
                           <td class="text-info">
                             <a
                               href="job.html"
@@ -1290,7 +1316,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="pb-3 ">
+                    <div class="pb-3">
                       <label for="date" class="form-label">Source</label>
 
                       <select
@@ -1337,7 +1363,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="pb-3 ">
+                    <div class="pb-3">
                       <label for="date" class="form-label">Source ID</label>
 
                       <select
@@ -1385,7 +1411,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="pb-3 ">
+                    <div class="pb-3">
                       <label for="date" class="form-label"
                         >Tutoring Method</label
                       >
@@ -1402,7 +1428,10 @@
                     </div>
                   </div>
 
-                  <div class="collapse border-top border-2 pt-1" id="collapseExample">
+                  <div
+                    class="collapse border-top border-2 pt-1"
+                    id="collapseExample"
+                  >
                     <div class="row row-cols-2 row-cols-lg-4 pt-2">
                       <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label">Salary</label>
@@ -1492,7 +1521,7 @@
                           <option value="1">Hindu</option>
                         </select>
                       </div>
-                      <div class="pb-3 ">
+                      <div class="pb-3">
                         <label for="date" class="form-label">Hide Offer</label>
 
                         <select
@@ -1569,8 +1598,12 @@
                   <div class="row row-cols-2 g-0">
                     <div class="d-flex flex-column border-end">
                       <div
-                        class=" text-white px-4"
-                        style="border-radius: 8px 0 0 0; padding: 35px 0; background-color: #3378C2;"
+                        class="text-white px-4"
+                        style="
+                          border-radius: 8px 0 0 0;
+                          padding: 35px 0;
+                          background-color: #3378c2;
+                        "
                       >
                         EM-1
                       </div>
@@ -1581,8 +1614,12 @@
                     </div>
                     <div class="d-flex flex-column">
                       <div
-                        class=" text-white px-4"
-                        style="border-radius: 0 8px 0 0; padding: 35px 0;background-color: #3378C2;"
+                        class="text-white px-4"
+                        style="
+                          border-radius: 0 8px 0 0;
+                          padding: 35px 0;
+                          background-color: #3378c2;
+                        "
                       >
                         EM-2
                       </div>
@@ -1611,19 +1648,23 @@
             >
               <div class="modal-content">
                 <div class="modal-body p-4">
-                 <div class="d-flex justify-content-center align-items-center gap-3">
-                  <a class="btn btn-dark" href="see-condition.html"
-                  >See Condition</a
-                >
-                <a class="btn btn-dark" href="status-log.html">Status Log</a>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-pink">Hide</button>
+                  <div
+                    class="d-flex justify-content-center align-items-center gap-3"
+                  >
+                    <a class="btn btn-dark" href="see-condition.html"
+                      >See Condition</a
+                    >
+                    <a class="btn btn-dark" href="status-log.html"
+                      >Status Log</a
+                    >
+                    <button class="btn btn-warning">Edit</button>
+                    <button class="btn btn-pink">Hide</button>
 
-                <a class="btn btn-dark" href="search-tutor.html"
-                  >Search Tutor</a
-                >
-                <a class="btn btn-dark" href="sms-log.html">SMS Log</a>
-                 </div>
+                    <a class="btn btn-dark" href="search-tutor.html"
+                      >Search Tutor</a
+                    >
+                    <a class="btn btn-dark" href="sms-log.html">SMS Log</a>
+                  </div>
                 </div>
               </div>
             </div>
