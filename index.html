@@ -578,22 +578,25 @@
                             </a>
                           </td>
                           <td>
-                            <div class="onoffswitch">
+                            <!-- <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
+                            </div> -->
+                            <div class="form-check form-switch">
                               <input
+                                class="form-check-input"
                                 type="checkbox"
-                                name="onoffswitch"
-                                class="onoffswitch-checkbox"
-                                id="myonoffswitch"
-                                tabindex="0"
-                                checked
+                                role="switch"
+                                id="flexSwitchCheckDefault"
+                                style="transform: scale(1.5)"
                               />
-                              <label
-                                class="onoffswitch-label"
-                                for="myonoffswitch"
-                              >
-                                <span class="onoffswitch-inner"></span>
-                                <span class="onoffswitch-switch"></span>
-                              </label>
                             </div>
                           </td>
                           <td>
@@ -1684,15 +1687,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="/js/sidebar.js"></script>
-    <script src="/js/owl/owl.carousel.min.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
           loop: true,
+          autoplay: true,
+          autoplayTimeout: 1500,
+          autoplayHoverPause: true,
+          autoplaySpeed: 1000,
           margin: 10,
           responsiveClass: true,
-          loop: true,
           nav: true,
           navText: [
             "<i class='bi bi-chevron-right arrow-icon'></i>",
@@ -1703,19 +1708,22 @@
             0: {
               items: 1,
               nav: true,
+              loop: true,
             },
             600: {
               items: 2,
-              nav: false,
+              loop: true,
             },
             1000: {
               items: 4,
               nav: true,
-              loop: false,
+              loop: true,
             },
           },
         });
       });
     </script>
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
   </body>
 </html>

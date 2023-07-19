@@ -735,7 +735,7 @@
                 </div>
                 <div class="modal-body py-0">
                   <div class="row row-cols-1 row-cols-lg-3 pb-2">
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Date from</label>
                       <input
                         type="date"
@@ -743,7 +743,7 @@
                         id="date"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Category</label>
 
                       <select
@@ -770,7 +770,7 @@
                       </select>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Date To</label>
                       <input
                         type="date"
@@ -778,7 +778,7 @@
                         id="date"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Course</label>
 
                       <select
@@ -805,7 +805,7 @@
                       </select>
                     </div>
 
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="name" class="form-label">Job Id</label>
                       <input
                         type="text"
@@ -814,7 +814,7 @@
                         placeholder="12356"
                       />
                     </div>
-                    <div class="mb-3">
+                    <div class="pb-3 border-end border-2">
                       <label for="date" class="form-label">Country</label>
 
                       <select
@@ -991,36 +991,6 @@
     ></script>
     <script src="/js/sidebar.js"></script>
     <script src="/js/owl/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          responsiveClass: true,
-          loop: true,
-          nav: true,
-          navText: [
-            "<i class='bi bi-chevron-right arrow-icon'></i>",
-            "<i class='bi bi-chevron-left arrow-icon'></i>",
-          ],
-          navClass: ["carousel-nav-btn-prev", "carousel-nav-btn-next"],
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            600: {
-              items: 2,
-              nav: false,
-            },
-            1000: {
-              items: 4,
-              nav: true,
-              loop: false,
-            },
-          },
-        });
-      });
-    </script>
+    
   </body>
 </html>

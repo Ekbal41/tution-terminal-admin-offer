@@ -860,7 +860,7 @@
                   </div>
                   <div class="modal-body py-0">
                     <div class="row row-cols-2 row-cols-lg-4 pb-2">
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label"
                           >Employee Name</label
                         >
@@ -875,7 +875,7 @@
                           <option value="3">Three</option>
                         </select>
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="phone" class="form-label"
                           >Received Number</label
                         >
@@ -886,7 +886,7 @@
                         />
                       </div>
 
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label"
                           >Created At From</label
                         >
@@ -910,7 +910,7 @@
                         </select>
                       </div>
 
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="id" class="form-label">Employee ID</label>
 
                         <input
@@ -920,7 +920,7 @@
                           placeholder="123567"
                         />
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="smsbody" class="form-label">SMS Body</label>
 
                         <input
@@ -930,7 +930,7 @@
                           placeholder="SMS Body"
                         />
                       </div>
-                      <div class="mb-3">
+                      <div class="pb-3 border-end border-2">
                         <label for="date" class="form-label"
                           >Created At To</label
                         >
@@ -989,36 +989,6 @@
     ></script>
     <script src="/js/sidebar.js"></script>
     <script src="/js/owl/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          responsiveClass: true,
-          loop: true,
-          nav: true,
-          navText: [
-            "<i class='bi bi-chevron-right arrow-icon'></i>",
-            "<i class='bi bi-chevron-left arrow-icon'></i>",
-          ],
-          navClass: ["carousel-nav-btn-prev", "carousel-nav-btn-next"],
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            600: {
-              items: 2,
-              nav: false,
-            },
-            1000: {
-              items: 4,
-              nav: true,
-              loop: false,
-            },
-          },
-        });
-      });
-    </script>
+    
   </body>
 </html>
