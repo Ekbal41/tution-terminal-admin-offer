@@ -154,11 +154,6 @@ body {
   color: white;
 }
 
-.btn-ndark:checked {
-  background-color: #3b3c3d;
-  color: white;
-}
-
 .nav-tabs > li > button.active {
   border: 2px solid #3378c2 !important;
 }
