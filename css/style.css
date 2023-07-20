@@ -126,6 +126,39 @@ body {
   color: white;
 }
 
+.btn-ndark {
+  background-color: #3b3c3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-ndark:hover {
+  background-color: #2b2c2d;
+  color: white;
+}
+
+.btn-outline-ndark {
+  background-color: white;
+  color: #3b3c3d;
+  border: 1px solid #3b3c3d;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-outline-ndark:hover {
+  background-color: #3b3c3d;
+  color: white;
+}
+
+.btn-ndark:checked {
+  background-color: #3b3c3d;
+  color: white;
+}
+
 .nav-tabs > li > button.active {
   border: 2px solid #3378c2 !important;
 }

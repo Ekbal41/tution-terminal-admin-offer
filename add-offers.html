@@ -426,7 +426,11 @@
                             </p>
                           </div>
                         </div>
-                        <button class="btn shadow-none text-info">
+                        <button
+                          class="btn shadow-none text-info"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal2"
+                        >
                           <i class="bi bi-plus-lg fw-bold me-3"></i>Add New
                           Parent
                         </button>
@@ -469,7 +473,11 @@
                             </p>
                           </div>
                         </div>
-                        <button class="btn shadow-none text-info">
+                        <button
+                          class="btn shadow-none text-info"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal3"
+                        >
                           <i class="bi bi-plus-lg fw-bold me-3"></i>Add New
                           Reference
                         </button>
@@ -1015,7 +1023,7 @@
 
                     <div class="">
                       <div class="mb-3">
-                        <label for="cat" class="form-label required"
+                        <label for="cat" class="form-label"
                           >Preferred Tutoring Category</label
                         >
                         <select
@@ -1569,6 +1577,136 @@
             </div>
 
             <!-- main content section ends here -->
+            <!-- Modal for add parents-->
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel2"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Parents</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="name" class="form-label required">Name</label>
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="name"
+                        placeholder="Mehedi Hasan"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control rounded-3 shadow-none"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="num1" class="form-label required"
+                        >Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="num1"
+                        placeholder="01658963122"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="num2" class="form-label"
+                        >Additional Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="num2"
+                        placeholder="01658963122"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for add ref-->
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel3"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Reference </h5>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="name" class="form-label required">Name</label>
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="name"
+                        placeholder="Mehedi Hasan"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control rounded-3 shadow-none"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="num1" class="form-label required"
+                        >Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="num1"
+                        placeholder="01658963122"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="num2" class="form-label"
+                        >Additional Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control rounded-3 shadow-none"
+                        id="num2"
+                        placeholder="01658963122"
+                        style="padding: 14px 18px"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Modal for status-->
             <div
               class="modal fade"
@@ -1991,7 +2129,7 @@
                           <p class="text-uppercase m-0">job id</p>
                           <p class="text-uppercase m-0">Total Views-1</p>
 
-                          <p class="text-uppercase m-0">total aplications-23</p>
+                          <p class="text-uppercase m-0">total applications-23</p>
                         </div>
                       </div>
                       <div class="col-lg-4 col-12 mt-4 mt-lg-0">
@@ -2041,6 +2179,5 @@
     ></script>
     <script src="/js/sidebar.js"></script>
     <script src="/js/owl/owl.carousel.min.js"></script>
-    
   </body>
 </html>

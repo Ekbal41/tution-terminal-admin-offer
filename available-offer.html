@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/color_palets.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/custom-switch-and-checkbox.css" />
+
     <link rel="stylesheet" href="/css/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="/css/owl/owl.theme.default.min.css" />
 
@@ -217,7 +219,9 @@
                       class="ms-4 px-3 py-1 my-3"
                       style="border-left: 3px solid #898e99"
                     >
-                      <a href="#" class="text-gray-800 text-decoration-none"
+                      <a
+                        href="applications.html"
+                        class="text-gray-800 text-decoration-none"
                         >Applications</a
                       >
                     </li>
@@ -225,7 +229,9 @@
                       class="ms-4 px-3 py-1 mt-3"
                       style="border-left: 3px solid #898e99"
                     >
-                      <a href="#" class="text-gray-800 text-decoration-none"
+                      <a
+                        href="add-offers.html"
+                        class="text-gray-800 text-decoration-none"
                         >Add Offers</a
                       >
                     </li>
@@ -401,7 +407,7 @@
                 >Available offers</a
               >
               <a class="text-decoration-none text-gray-800" href="index.html"
-                >Aplications</a
+                >Applications</a
               >
               <a
                 class="text-decoration-none text-gray-800"
@@ -455,7 +461,7 @@
                   >
                     <i class="bi bi-sliders2 me-1"></i>Filter
                   </button>
-                  <button class="btn btn-outline-dark">Send Bulk SMS</button>
+                  <button class="btn btn-outline-ndark">Send Bulk SMS</button>
                 </div>
                 <div class="d-flex gap-3">
                   <input
@@ -464,10 +470,11 @@
                     placeholder="Search"
                   />
                   <select class="form-select rounded" style="width: 100px">
-                    <option selected>100</option>
-                    <option value="1">200</option>
-                    <option value="2">400</option>
-                    <option value="3">500</option>
+                    <option selected>50</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
                   </select>
                 </div>
               </div>
@@ -485,10 +492,11 @@
                         <tr>
                           <th scope="col" class="text-nowrap">
                             <input
-                              class="form-check-input me-2 ms-2"
+                              class="form-check-input ms-1"
                               type="checkbox"
                               value=""
                               id="flexCheckDefault"
+                              style="margin-right: 12px"
                             />Date
                           </th>
                           <th scope="col" class="text-nowrap">Parents ID</th>
@@ -498,7 +506,9 @@
                           <th scope="col" class="text-nowrap">Salary</th>
                           <th scope="col">EM</th>
                           <th scope="col" class="text-nowrap">Created By</th>
-                          <th scope="col" class="text-nowrap">Aplied Tutors</th>
+                          <th scope="col" class="text-nowrap">
+                            applied Tutors
+                          </th>
                           <th scope="col" class="text-nowrap">Live</th>
                           <th scope="col" class="text-nowrap">Action</th>
                         </tr>
@@ -570,7 +580,7 @@
                             </a>
                           </td>
                           <td>
-                            <!-- <div class="switch-toggle">
+                            <div class="switch-toggle">
                               <div class="button-check" id="button-check">
                                 <input
                                   type="checkbox"
@@ -580,15 +590,6 @@
                                 <span class="switch-btn"></span>
                                 <span class="layer"></span>
                               </div>
-                            </div> -->
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
                             </div>
                           </td>
                           <td>
@@ -666,14 +667,16 @@
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -740,7 +743,7 @@
                               style="width: fit-content"
                               href="aplicant-list.html"
                             >
-                              645
+                              3
                             </a>
 
                             <a
@@ -752,14 +755,16 @@
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -833,18 +838,20 @@
                               style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
-                              4234
+                              0
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -916,91 +923,6 @@
 
                             <a
                               class="bg-primary text-white rounded-pill text-decoration-none border border-primary"
-                              style="padding: 0px 5px 0px 5px"
-                              href="aplicant-list.html"
-                            >
-                              4234
-                            </a>
-                          </td>
-                          <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
-                            </div>
-                          </td>
-                          <td>
-                            <button
-                              class="btn btn-primary py-1"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModal5"
-                            >
-                              Action
-                            </button>
-                          </td>
-                        </tr>
-                        <tr class="" style="vertical-align: middle">
-                          <td
-                            scope="row "
-                            class="text-center text-nowrap"
-                            style="padding: 30px 18px"
-                          >
-                            <input
-                              class="form-check-input me-2"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            <a
-                              type="button"
-                              class="text-decoration-none text-gray-700"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModal2"
-                            >
-                              06-06-2023
-                            </a>
-                          </td>
-                          <td class="text-info">
-                            <a href="#" class="text-decoration-none text-info"
-                              >12345</a
-                            >
-                          </td>
-                          <td class="text-info">
-                            <a
-                              href="job.html"
-                              class="p-1 rounded text-info text-decoration-none"
-                              style="background-color: #e6eef7"
-                              >23457</a
-                            >
-                          </td>
-                          <td class="">Class-8</td>
-                          <td class="text-wrap">Tolarbag, Mirpur</td>
-                          <td>5000</td>
-                          <td class="text-info">
-                            <a
-                              type="button"
-                              class="text-decoration-none text-info"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModal3"
-                            >
-                              EM
-                            </a>
-                          </td>
-                          <td class="text-nowrap">Khalid Rahman</td>
-                          <td class="text-center">
-                            <a
-                              class="text-primary rounded-pill text-decoration-none me-2"
-                              style="width: fit-content"
-                              href="aplicant-list.html"
-                            >
-                              6
-                            </a>
-                            <a
-                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
                               style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
@@ -1008,14 +930,16 @@
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -1082,7 +1006,94 @@
                               style="width: fit-content"
                               href="aplicant-list.html"
                             >
-                              123
+                              6
+                            </a>
+                            <a
+                              class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
+                              style="padding: 0px 5px 0px 5px"
+                              href="aplicant-list.html"
+                            >
+                              0
+                            </a>
+                          </td>
+                          <td>
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <button
+                              class="btn btn-primary py-1"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal5"
+                            >
+                              Action
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="" style="vertical-align: middle">
+                          <td
+                            scope="row "
+                            class="text-center text-nowrap"
+                            style="padding: 30px 18px"
+                          >
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <a
+                              type="button"
+                              class="text-decoration-none text-gray-700"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal2"
+                            >
+                              06-06-2023
+                            </a>
+                          </td>
+                          <td class="text-info">
+                            <a href="#" class="text-decoration-none text-info"
+                              >12345</a
+                            >
+                          </td>
+                          <td class="text-info">
+                            <a
+                              href="job.html"
+                              class="p-1 rounded text-info text-decoration-none"
+                              style="background-color: #e6eef7"
+                              >23457</a
+                            >
+                          </td>
+                          <td class="">Class-8</td>
+                          <td class="text-wrap">Tolarbag, Mirpur</td>
+                          <td>5000</td>
+                          <td class="text-info">
+                            <a
+                              type="button"
+                              class="text-decoration-none text-info"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal3"
+                            >
+                              EM
+                            </a>
+                          </td>
+                          <td class="text-nowrap">Khalid Rahman</td>
+                          <td class="text-center">
+                            <a
+                              class="text-primary rounded-pill text-decoration-none me-2"
+                              style="width: fit-content"
+                              href="aplicant-list.html"
+                            >
+                              7
                             </a>
 
                             <a
@@ -1090,18 +1101,20 @@
                               style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
-                              4234
+                              4
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -1168,25 +1181,27 @@
                               style="width: fit-content"
                               href="aplicant-list.html"
                             >
-                              6124
+                              2
                             </a>
                             <a
                               class="bg-white text-primary rounded-pill text-decoration-none border border-primary"
                               style="padding: 0px 5px 0px 5px"
                               href="aplicant-list.html"
                             >
-                              43566
+                              0
                             </a>
                           </td>
                           <td>
-                            <div class="form-check form-switch">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                role="switch"
-                                id="flexSwitchCheckDefault"
-                                style="transform: scale(1.5)"
-                              />
+                            <div class="switch-toggle">
+                              <div class="button-check" id="button-check">
+                                <input
+                                  type="checkbox"
+                                  class="checkbox"
+                                  checked
+                                />
+                                <span class="switch-btn"></span>
+                                <span class="layer"></span>
+                              </div>
                             </div>
                           </td>
                           <td>
@@ -1260,8 +1275,8 @@
               class="modal-dialog modal-dialog-centered px-3"
               style="max-width: 1100px"
             >
-              <div class="modal-content px-4 pt-3 pb-4">
-                <div class="modal-header">
+              <div class="modal-content pt-4 pb-4 ps-2">
+                <div class="modal-header pe-5" style="padding-left: 40px">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">
                     Filter
                     <span class="text-muted fw-light" style="font-size: 12">
@@ -1276,262 +1291,371 @@
                   ></button>
                 </div>
                 <div class="modal-body py-0">
-                  <div class="row row-cols-2 row-cols-lg-4 pb-2">
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Date from</label>
-                      <input
-                        type="date"
-                        class="form-control shadow rounded-2"
-                        id="date"
-                      />
+                  <div class="row row-cols-2 row-cols-lg-4 pb-2 ps-4">
+                    <div class="d-flex">
+                      <div>
+                        <div class="pb-3">
+                          <label for="datef" class="form-label"
+                            >Date from</label
+                          >
+                          <div>
+                            <input
+                              type="date"
+                              class="form-control shadow rounded-2"
+                              id="datef"
+                            />
+                          </div>
+                        </div>
+                        <div class="pb-3">
+                          <label for="datet" class="form-label">Date To</label>
+                          <input
+                            type="date"
+                            class="form-control shadow rounded-2"
+                            id="datet"
+                          />
+                        </div>
+                        <div class="pb-3">
+                          <label for="crby" class="form-label"
+                            >Created By</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control shadow rounded-2"
+                            id="crby"
+                            placeholder="Yasin Ahammed"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="mb-3 ms-4"
+                        style="
+                          margin-top: 34px;
+                          width: 1px;
+                          background-color: #f0f1f2;
+                        "
+                      ></div>
                     </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Country</label>
+                    <div class="d-flex justify-content-between">
+                      <div class="flex-grow-1">
+                        <div class="pb-3">
+                          <label for="cntry" class="form-label">Country</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Bangladesh</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Category</label>
+                          <select
+                            id="cntry"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Bangladesh</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="cty" class="form-label">City</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Bangla Medium</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3">
-                      <label for="date" class="form-label">Source</label>
+                          <select
+                            id="cty"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Dhaka</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="loc" class="form-label">Location</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Affiliate Marcketing</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                          <select
+                            id="loc"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Mirpur 1</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="mb-3 ms-4"
+                        style="
+                          margin-top: 34px;
+                          width: 1px;
+                          background-color: #f0f1f2;
+                        "
+                      ></div>
                     </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Date To</label>
-                      <input
-                        type="date"
-                        class="form-control shadow rounded-2"
-                        id="date"
-                      />
-                    </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">City</label>
+                    <div class="d-flex">
+                      <div class="flex-grow-1">
+                        <div class="pb-3">
+                          <label for="cat" class="form-label">Category</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Dhaka</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Course</label>
+                          <select
+                            id="cat"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Bangla Medium</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="course" class="form-label">Course</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>HSC</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3">
-                      <label for="date" class="form-label">Source ID</label>
+                          <select
+                            id="course"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>HSC</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="sub" class="form-label">Subjects</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>23456</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                          <select
+                            id="sub"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Bangla</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="mb-3 ms-4"
+                        style="
+                          margin-top: 34px;
+                          width: 1px;
+                          background-color: #f0f1f2;
+                        "
+                      ></div>
                     </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="name" class="form-label">Created By</label>
-                      <input
-                        type="text"
-                        class="form-control shadow rounded-2"
-                        id="name"
-                        placeholder="Yasin Ahammed"
-                      />
-                    </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Location</label>
+                    <div class="d-flex justify-content-start">
+                      <div>
+                        <div class="pb-3">
+                          <label for="am" class="form-label">Source</label>
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Mirpur 1</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3 border-end border-2">
-                      <label for="date" class="form-label">Subjects</label>
+                          <select
+                            id="am"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Affiliate Marcketing</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="srcid" class="form-label"
+                            >Source ID</label
+                          >
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Bangla</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="pb-3">
-                      <label for="date" class="form-label"
-                        >Tutoring Method</label
-                      >
+                          <select
+                            id="srcid"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>23456</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="pb-3">
+                          <label for="tm" class="form-label"
+                            >Tutoring Method</label
+                          >
 
-                      <select
-                        class="shadow rounded-2 form-select"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Select Method</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                          <select
+                            id="tm"
+                            class="shadow rounded-2 form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Select Method</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- Dont remove this unnessary wrapper flex div -->
                     </div>
                   </div>
 
-                  <div
-                    class="collapse border-top border-2 pt-1"
-                    id="collapseExample"
-                  >
-                    <div class="row row-cols-2 row-cols-lg-4 pt-2">
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label">Salary</label>
+                  <div class="collapse" id="collapseExample">
+                    <div class="border-top border-2 pt-1 mx-4"></div>
+                    <div class="row row-cols-2 row-cols-lg-4 pb-2 ps-4 pt-2">
+                      <div class="d-flex">
+                        <div>
+                          <div class="pb-3">
+                            <label for="salary" class="form-label"
+                              >Salary</label
+                            >
 
-                        <input
-                          type="text"
-                          class="form-control shadow rounded-2"
-                          id="name"
-                          placeholder="5000"
-                        />
+                            <input
+                              type="text"
+                              class="form-control shadow rounded-2"
+                              id="salary"
+                              placeholder="5000"
+                            />
+                          </div>
+                          <div class="pb-3">
+                            <label for="channel" class="form-label"
+                              >Channel</label
+                            >
+
+                            <select
+                              id="channel"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Website</option>
+                              <option value="1">Facebook</option>
+                              <option value="2">Twitter</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="mb-3 ms-4"
+                          style="
+                            margin-top: 34px;
+                            width: 1px;
+                            background-color: #f0f1f2;
+                          "
+                        ></div>
                       </div>
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label">
-                          Gender Requirement
-                        </label>
+                      <div class="d-flex justify-content-between">
+                        <div class="flex-grow-1">
+                          <div class="pb-3">
+                            <label for="genderr" class="form-label">
+                              Gender Requirement
+                            </label>
 
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Male</option>
-                          <option value="1">Female</option>
-                        </select>
+                            <select
+                              id="genderr"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Male</option>
+                              <option value="1">Female</option>
+                            </select>
+                          </div>
+                          <div class="pb-3">
+                            <label for="daw" class="form-label"
+                              >Days and Week</label
+                            >
+
+                            <select
+                              id="daw"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>4 days</option>
+                              <option value="1">5 days</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="mb-3 ms-4"
+                          style="
+                            margin-top: 34px;
+                            width: 1px;
+                            background-color: #f0f1f2;
+                          "
+                        ></div>
                       </div>
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label"
-                          >Student Gender</label
-                        >
+                      <div class="d-flex">
+                        <div class="flex-grow-1">
+                          <div class="pb-3">
+                            <label for="sgender" class="form-label"
+                              >Student Gender</label
+                            >
 
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Male</option>
-                          <option value="1">Femake</option>
-                        </select>
+                            <select
+                              id="sgender"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Male</option>
+                              <option value="1">Femake</option>
+                            </select>
+                          </div>
+                          <div class="pb-3">
+                            <label for="rel" class="form-label">Religion</label>
+
+                            <select
+                              id="rel"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Islam</option>
+                              <option value="1">Hindu</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div
+                          class="mb-3 ms-4"
+                          style="
+                            margin-top: 34px;
+                            width: 1px;
+                            background-color: #f0f1f2;
+                          "
+                        ></div>
                       </div>
-                      <div class="pb-3">
-                        <label for="date" class="form-label">
-                          Institute Name
-                        </label>
+                      <div class="d-flex">
+                        <div>
+                          <div class="pb-3">
+                            <label for="in" class="form-label">
+                              Institute Name
+                            </label>
 
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>School And College</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label">Channel</label>
+                            <select
+                              id="in"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>School and College</option>
+                              <option value="1">Others Institute</option>
+                            </select>
+                          </div>
+                          <div class="pb-3">
+                            <label for="hoffer" class="form-label"
+                              >Hide Offer</label
+                            >
 
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Website</option>
-                          <option value="1">Facebook</option>
-                          <option value="2">Twitter</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label"
-                          >Days and Week</label
-                        >
-
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>4 days</option>
-                          <option value="1">5 days</option>
-                        </select>
-                      </div>
-                      <div class="pb-3 border-end border-2">
-                        <label for="date" class="form-label">Religion</label>
-
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Islam</option>
-                          <option value="1">Hindu</option>
-                        </select>
-                      </div>
-                      <div class="pb-3">
-                        <label for="date" class="form-label">Hide Offer</label>
-
-                        <select
-                          class="shadow rounded-2 form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>Hide</option>
-                          <option value="1">Nothing</option>
-                        </select>
+                            <select
+                              id="hoffer"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected>Hide</option>
+                              <option value="1">Nothing</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- Dont remove this unnessary wrapper flex div -->
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="modal-footer d-flex justify-content-between align-items-center"
+                  class="modal-footer d-flex justify-content-between align-items-center pe-5"
+                  style="padding-left: 35px"
                 >
                   <div>
                     <a
@@ -1595,7 +1719,7 @@
                       <div
                         class="text-white px-4"
                         style="
-                          border-radius: 8px 0 0 0;
+                          border-radius: 7px 0 0 0;
                           padding: 35px 0;
                           background-color: #3378c2;
                         "
@@ -1611,7 +1735,7 @@
                       <div
                         class="text-white px-4"
                         style="
-                          border-radius: 0 8px 0 0;
+                          border-radius: 0 7px 0 0;
                           padding: 35px 0;
                           background-color: #3378c2;
                         "
@@ -1646,19 +1770,19 @@
                   <div
                     class="d-flex justify-content-center align-items-center gap-3"
                   >
-                    <a class="btn btn-dark" href="see-condition.html"
+                    <a class="btn btn-ndark" href="see-condition.html"
                       >See Condition</a
                     >
-                    <a class="btn btn-dark" href="status-log.html"
+                    <a class="btn btn-ndark" href="status-log.html"
                       >Status Log</a
                     >
                     <button class="btn btn-warning">Edit</button>
                     <button class="btn btn-pink">Hide</button>
 
-                    <a class="btn btn-dark" href="search-tutor.html"
+                    <a class="btn btn-ndark" href="search-tutor.html"
                       >Search Tutor</a
                     >
-                    <a class="btn btn-dark" href="sms-log.html">SMS Log</a>
+                    <a class="btn btn-ndark" href="sms-log.html">SMS Log</a>
                   </div>
                 </div>
               </div>
@@ -1679,8 +1803,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="/js/sidebar.js"></script>
-    <script src="/js/owl/owl.carousel.min.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
@@ -1716,5 +1839,7 @@
         });
       });
     </script>
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
   </body>
 </html>
