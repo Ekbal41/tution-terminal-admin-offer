@@ -107,7 +107,11 @@ body {
   cursor: pointer;
 }
 .btn-pink:hover {
-  background-color: #ef6060;
+  background-color: #e85656;
+  color: white;
+}
+.btn-pink:active:hover {
+  background-color: #e85656;
   color: white;
 }
 
@@ -122,8 +126,14 @@ body {
 }
 
 .btn-outline-pink:hover {
-  background-color: #f26969;
+  background-color: #e85656;
   color: white;
+  border: 1px solid #e85656;
+}
+.btn-outline-pink:active:hover {
+  background-color: #e85656;
+  color: white;
+  border: 1px solid #e85656;
 }
 
 .btn-ndark {
@@ -136,6 +146,10 @@ body {
   cursor: pointer;
 }
 .btn-ndark:hover {
+  background-color: #2b2c2d;
+  color: white;
+}
+.btn-ndark:active:hover {
   background-color: #2b2c2d;
   color: white;
 }
@@ -152,6 +166,12 @@ body {
 .btn-outline-ndark:hover {
   background-color: #3b3c3d;
   color: white;
+  border: 1px solid #3b3c3d;
+}
+.btn-outline-ndark:active:hover {
+  background-color: #3b3c3d;
+  color: white;
+  border: 1px solid #3b3c3d;
 }
 
 .nav-tabs > li > button.active {
