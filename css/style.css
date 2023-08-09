@@ -154,6 +154,24 @@ body {
   color: white;
 }
 
+.btn-gdark {
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-gdark:hover {
+  background-color: #5b626a;
+  color: white;
+}
+.btn-gdark:active:hover {
+  background-color: #5b626a;
+  color: white;
+}
+
 .btn-outline-ndark {
   background-color: white;
   color: #3b3c3d;
